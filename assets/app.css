@@ -526,7 +526,9 @@ button:focus {
 }
 
 .hero__img-container {
-  border-radius: .5rem;
+  border-radius: 1rem;
+  max-width:50%;
+  height: auto;
   overflow: hidden;
 }
 
