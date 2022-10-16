@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Artur Riazanov</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Artur Riazanov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 20 Sep 2022 19:23:03 +0200</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCSP is Hard for Read-Once Nondeterministic Branching Programs</title>
+      <link>/posts/mcsp-nbp/</link>
+      <pubDate>Tue, 20 Sep 2022 19:23:03 +0200</pubDate>
+      
+      <guid>/posts/mcsp-nbp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automating OBDD proofs is NP-hard</title>
+      <link>/posts/obdd-nonautomatability/</link>
+      <pubDate>Sat, 20 Aug 2022 19:23:03 +0200</pubDate>
+      
+      <guid>/posts/obdd-nonautomatability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tight Bounds for Tseitin Formulas</title>
+      <link>/posts/tight-bounds-tseitin/</link>
+      <pubDate>Wed, 10 Aug 2022 19:23:03 +0200</pubDate>
+      
+      <guid>/posts/tight-bounds-tseitin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Almost Tight Lower Bounds on Regular Resolution Refutations of Tseitin Formulas for All Constant-Degree Graphs</title>
+      <link>/posts/tseitin-regular-res/</link>
+      <pubDate>Tue, 10 Aug 2021 19:23:03 +0200</pubDate>
+      
+      <guid>/posts/tseitin-regular-res/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proof complexity of natural formulas via communication arguments</title>
+      <link>/posts/natural-formulas-communication/</link>
+      <pubDate>Sat, 10 Jul 2021 19:23:03 +0200</pubDate>
+      
+      <guid>/posts/natural-formulas-communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lower Bounds on OBDD Proofs with Several Orders</title>
+      <link>/posts/1bp-calculus/</link>
+      <pubDate>Thu, 10 Jun 2021 19:23:03 +0200</pubDate>
+      
+      <guid>/posts/1bp-calculus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bounded-Depth Frege Complexity of Tseitin Formulas for All Graphs</title>
+      <link>/posts/tseitin-all-graphs/</link>
+      <pubDate>Sat, 10 Aug 2019 19:23:03 +0200</pubDate>
+      
+      <guid>/posts/tseitin-all-graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Decision Trees with Symmetries</title>
+      <link>/posts/decision-trees-with-symmetries/</link>
+      <pubDate>Sun, 10 Jun 2018 19:23:03 +0200</pubDate>
+      
+      <guid>/posts/decision-trees-with-symmetries/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

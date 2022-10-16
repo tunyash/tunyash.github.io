@@ -1,228 +1,456 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="">
+    
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
- <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
-  <!-- font awesome 5 free -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
-
-  <!-- Poppins font from Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> 
-
-  <link rel="stylesheet" href="assets/app.css">
-
-  <title>Artur Riazanov's homepage</title>
-</head>
-
-<body>
+	<meta name="generator" content="Hugo 0.104.3" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="dark">
+    <title>Artur`s homepage | Artur Riazanov</title>
 
     
-  <!--Hero ====================================== -->
-  <header class="hero container-fluid border-bottom">
-    <div class="hero__content container mx-auto">
-      <div class="row px-0 mx-0 align-items-center">
-        <div class="col-lg-6 px-0">
-          <h1 class="block__title mb-3">
-            Artur Riazanov's homepage
-          </h1>
-          <p class="hero__paragraph mb-3">
-            I am a PhD student in St. Petersburg Department of Steklov Mathematical Institute advised by <a href='https://logic.pdmi.ras.ru/~dmitrits/'>Dmitry Itsykson</a>. My main research area is proof complexity.
-          </p>
-         
-        </div>   
-        <div class="col-lg-5 mt-5 mt-lg-0 mx-0">
-          <div class="hero__img-container">
-            <img src="assets/imgs/my_photo.jpg" class="hero__img w-100">
-          </div>
-        </div>     
-      </div>
-          
-      </div>
-     
-          
-      </div>
-    </div>
-  </header>
+    
+    
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Artur`s homepage | Artur Riazanov"/>
+    <meta itemprop="name" content="Artur`s homepage | Artur Riazanov" />
+    <meta name="twitter:title" content="Artur`s homepage | Artur Riazanov" />
+    <meta name="application-name" content="Artur`s homepage | Artur Riazanov" /><meta name="twitter:card" content="summary"/>
 
-  <!-- ===================================== -->
+    <meta name="description" content="" />
+    <meta name="twitter:description" content=""/>
+    <meta itemprop="description" content=""/>
+    <meta property="og:description" content="" />
 
-  <div id="publications" class="block-5 space-between-blocks">
+    
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <link rel="stylesheet" href="/sass/main.min.53d52de50e6fab45c3d9bb3e8021f3adcb387b3be97a35126407545a2974a228.css">
+    
+</head>
+    
+    <script>
+        (function() {
+            const colorSchemeKey = 'ThemeColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'ThemeColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.userColorScheme = 'dark';
+        } else {
+            document.documentElement.dataset.userColorScheme = 'light';
+        }
+    })();
+</script>
+
+
+    <body class="dark">
+        <nav class="navbar">
     <div class="container">
-      <!-- HEADER -->
-      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
-        
-        <h1 class="block__title mb-3">My publications</h1>
-        <p class="block__paragraph mb-0">
-        </p>
-      </div>
-      <h3 class="block__pre-title mb-3">Conference proceedings</h3>
-          <div class="card-2 d-flex">
+        <div class="flex">
             <div>
-              <span class="card-2__symbol mx-auto">
-                <i class="fas fa-comment"></i>
-              </span>
+                <a class="brand" href="/">
+                    
+                    
+                    Artur Riazanov
+                    </a>
             </div>
-            <div class="px-2"></div>
-            <div>
-              <h3 class="card-2__title mb-2">Automating OBDD proofs is NP-hard</h3>
-              <p class="card-2__paragraph">
-                with <a href='https://logic.pdmi.ras.ru/~dmitrits/'>Dmitry Itsykson</a>. To appear in proceedings of <a href='https://ac.tuwien.ac.at/mfcs2022/'>MFCS 2022</a>. <a href='https://eccc.weizmann.ac.il/report/2022/046/'>ECCC version</a>.               
-              </p>
+            <div class="flex">
+                
+                
+                    <button id="dark-mode-button">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M30.312.776C32 19 20 32 .776 30.312c8.199 7.717 21.091 7.588 29.107-.429C37.9 21.867 38.03 8.975 30.312.776z"/><path d="M30.705 15.915a1.163 1.163 0 1 0 1.643 1.641a1.163 1.163 0 0 0-1.643-1.641zm-16.022 14.38a1.74 1.74 0 0 0 0 2.465a1.742 1.742 0 1 0 0-2.465zm13.968-2.147a2.904 2.904 0 0 1-4.108 0a2.902 2.902 0 0 1 0-4.107a2.902 2.902 0 0 1 4.108 0a2.902 2.902 0 0 1 0 4.107z" fill="#FFCC4D"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#FFD983" d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm21 21s1.414 1.414 0 2.828s-2.828 0-2.828 0l-1.414-1.414s-1.414-1.414 0-2.828s2.828 0 2.828 0l1.414 1.414zm-.413-18.172s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zM16 32s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2v-2z"/><circle fill="#FFD983" cx="18" cy="18" r="10"/><rect x="0" y="0" width="36" height="36" fill="rgba(0, 0, 0, 0)" /></svg>
+                    </button>
+                
             </div>
-          </div>
-          <div class="card-2 d-flex">
-            <div>
-              <span class="card-2__symbol mx-auto">
-                <i class="fas fa-comment"></i>
-              </span>
             </div>
-            <div class="px-2"></div>
-            <div>
-              <h3 class="card-2__title mb-2">Tight Bounds for Tseitin Formulas</h3>
-              <p class="card-2__paragraph">
-                with <a href='https://logic.pdmi.ras.ru/~dmitrits/'>Dmitry Itsykson</a> and <a href='https://scholar.google.com/citations?user=J1-4Ue4AAAAJ'>Petr Smirnov</a>. Accepted to SAT 2022.
-              </p>
+    </div>
+</nav>
+
+        <main>
+            
+
+<div class="container">
+    <section class="my">
+        <div style="display: flex">
+        <div class="content">
+            
+            <p>I am a PhD student at EPFL working with <a href="https://theory.epfl.ch/mika/">Mika Göös.</a> Before I was at St. Petersburg department of Steklov Institute and at St. Petersburg Academic University working with <a href="https://logic.pdmi.ras.ru/~dmitrits/">Dmitry Itsykson.</a></p>
+<p>My research interests include proof complexity, communication complexity and circuit complexity.</p>
+
+            
+            <div class="bio-social">
+                
             </div>
-          </div>
-          <div class="card-2 d-flex">
-            <div>
-              <span class="card-2__symbol mx-auto">
-                <i class="fas fa-comment"></i>
-              </span>
-            </div>
-            <div class="px-2"></div>
-            <div>
-              <h3 class="card-2__title mb-2">Proof complexity of natural formulas via communication arguments</h3>
-              <p class="card-2__paragraph">
-                with <a href='https://logic.pdmi.ras.ru/~dmitrits/'>Dmitry Itsykson</a>. In proceedings of <a href='https://computationalcomplexity.org/'>CCC21</a>. <a href='https://eccc.weizmann.ac.il/report/2020/184/'>ECCC version</a>.               
-              </p>
-            </div>
-          </div>
-          <div class="card-2 d-flex">
-            <div>
-              <span class="card-2__symbol mx-auto">
-                <i class="fas fa-comment"></i>
-              </span>
-            </div>
-            <div class="px-2"></div>
-            <div>
-              <h3 class="card-2__title mb-2">Bounded-Depth Frege Complexity of Tseitin Formulas for All Graphs</h3>
-              <p class="card-2__paragraph">
-                with <a href='http://wwwusers.di.uniroma1.it/~galesi/'>Nicola Galesi</a>, <a href='https://logic.pdmi.ras.ru/~dmitrits/'>Dmitry Itsykson</a>, and <a href='http://asofronova.com/'>Anastasia Sofronova</a>. In proceedings of <a href='https://tcs.rwth-aachen.de/mfcs2019/'>MFCS19</a>. <a href='https://eccc.weizmann.ac.il/report/2019/069'>ECCC version</a>.               
-              </p>
-            </div>
-          </div> 
-          
-          <div class="card-2 d-flex">
-            <div>
-              <span class="card-2__symbol mx-auto">
-                <i class="fas fa-comment"></i>
-              </span>
-            </div>
-            <div class="px-2"></div>
-            <div>
-              <h3 class="card-2__title mb-2">On the Decision Trees with Symmetries</h3>
-              <p class="card-2__paragraph">
-                In proceedings of <a href='https://logic.pdmi.ras.ru/csr2018/'>CSR18</a>.            
-              </p>
-            </div>
-          </div> 
-     <h3 class="block__pre-title mb-3">Journals</h3>       
-        <div class="card-2 d-flex">
-            <div>
-              <span class="card-2__symbol mx-auto">
-                <i class="fas fa-book"></i>
-              </span>
-            </div>
-            <div class="px-2"></div>
-            <div>
-              <h3 class="card-2__title mb-2">Lower Bounds on OBDD Proofs with Several Orders</h3>
-              <p class="card-2__paragraph">
-                with <a href='https://www.math.ucsd.edu/~sbuss/'>Sam Buss</a>, <a href='https://logic.pdmi.ras.ru/~dmitrits/'>Dmitry Itsykson</a>, <a href='https://logic.pdmi.ras.ru/~knop/'>Alexander Knop</a>, and <a href='https://logic.pdmi.ras.ru/~sokolov/'>Dmitry Sokolov</a>. Accepted to ToCL. <a href='https://eccc.weizmann.ac.il/report/2020/073/'>ECCC version</a>.          
-              </p>
-            </div>
-          </div> 
-          
-          <div class="card-2 d-flex">
-            <div>
-              <span class="card-2__symbol mx-auto">
-                <i class="fas fa-book"></i>
-              </span>
-            </div>
-            <div class="px-2"></div>
-            <div>
-              <h3 class="card-2__title mb-2">
-          Almost Tight Lower Bounds on Regular Resolution Refutations of Tseitin Formulas for All Constant-Degree Graphs
-     </h3>
-              <p class="card-2__paragraph">
-                with <a href='https://logic.pdmi.ras.ru/~dmitrits/'>Dmitry Itsykson</a>, <a href='http://danilka.pro/'>Danil Sagunov</a>, and <a href='https://scholar.google.com/citations?user=J1-4Ue4AAAAJ'>Petr Smirnov</a>. Computational Complexity. <a href='https://eccc.weizmann.ac.il/report/2019/178/'>ECCC version</a>.          
-              </p>
-            </div>
-          </div> 
         </div>
-      </div>
-
-<!--<div id="publications" class="block-5 space-between-blocks">
-    <div class="container">
-      <!-- HEADER -->
-      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
-        
-        <h3 class="block__title mb-3">Preprints</h1>
-        <p class="block__paragraph mb-0">
-        </p>
-      </div>
-          
-          
+        <img src="my_photo.jpg" width=150 style="border-radius: 10pt">
         </div>
-      </div>
+    </section>
+</div>
 
--->
-  <!-- ===================================== -->
 
-  <div id="features" class="block-11 space-between-blocks">
-    <div class="container">
-      <!-- HEADER -->
-      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
-        <p class="block__pre-title mb-2">My email</p>
+
+
+
+
+<div class="container">
+    <section>
+        <h2>
+            Papers
+            
+        </h2>
+        <div class="posts">
+            
+            <div class="post">
+                
+                    <div class="post-row">
+                    <a href="/posts/mcsp-nbp/"> <h3>MCSP is Hard for Read-Once Nondeterministic Branching Programs</h3></a>                        
+                    <div style='display: flex;  align-items: right' >
+		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
+		                           
+		                 
+		              <a href="https://lglinskih.com/" class="proceed-link">Ludmila Glinskih</a>  
+		          
+		                           
+		                 
+		              <a href="https://tunyash.github.io" class="proceed-link">AR</a>  
+		          
+		        
+		        </div>
+                      <div style="display: flex; align-items: right; " >
+                      
+                                  
+                    </div>                    
+                    
+              
+                
+               
+                
+            </div>
+            
+            <div class="post">
+                
+                    <div class="post-row">
+                    <a href="/posts/obdd-nonautomatability/"> <h3>Automating OBDD proofs is NP-hard</h3></a>                        
+                    <div style='display: flex;  align-items: right' >
+		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
+		                           
+		                 
+		              <a href="https://logic.pdmi.ras.ru/~dmitrits/" class="proceed-link">Dmitry Itsykson</a>  
+		          
+		                           
+		                 
+		              <a href="https://tunyash.github.io" class="proceed-link">AR</a>  
+		          
+		        
+		        </div>
+                      <div style="display: flex; align-items: right; " >
+                      
+                        <div style='margin: 0.2rem; font-weight: 600'> Links: </div>
+                      
+                        
+                        	
+                        	<a class="proceed-link" href="https://drops.dagstuhl.de/opus/volltexte/2022/16857/"> MFCS 2022  </a> 
+                        
+                        	
+                        	<a class="proceed-link" href="https://eccc.weizmann.ac.il/report/2022/046/"> ECCC  </a> 
+                        
+                      </div>
+                      
+                                  
+                    </div>                    
+                    
+              
+                
+               
+                
+            </div>
+            
+            <div class="post">
+                
+                    <div class="post-row">
+                    <a href="/posts/tight-bounds-tseitin/"> <h3>Tight Bounds for Tseitin Formulas</h3></a>                        
+                    <div style='display: flex;  align-items: right' >
+		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
+		                           
+		                 
+		              <a href="https://logic.pdmi.ras.ru/~dmitrits/" class="proceed-link">Dmitry Itsykson</a>  
+		          
+		                           
+		                 
+		              <a href="https://tunyash.github.io" class="proceed-link">AR</a>  
+		          
+		                           
+		                 
+		              <a href="" class="proceed-link">Petr Smirnov</a>  
+		          
+		        
+		        </div>
+                      <div style="display: flex; align-items: right; " >
+                      
+                        <div style='margin: 0.2rem; font-weight: 600'> Links: </div>
+                      
+                        
+                        	
+                        	<a class="proceed-link" href="https://drops.dagstuhl.de/opus/volltexte/2022/16680/"> SAT 2022  </a> 
+                        
+                      </div>
+                      
+                                  
+                    </div>                    
+                    
+              
+                
+               
+                
+            </div>
+            
+            <div class="post">
+                
+                    <div class="post-row">
+                    <a href="/posts/tseitin-regular-res/"> <h3>Almost Tight Lower Bounds on Regular Resolution Refutations of Tseitin Formulas for All Constant-Degree Graphs</h3></a>                        
+                    <div style='display: flex;  align-items: right' >
+		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
+		                           
+		                 
+		              <a href="https://logic.pdmi.ras.ru/~dmitrits/" class="proceed-link">Dmitry Itsykson</a>  
+		          
+		                           
+		                 
+		              <a href="https://tunyash.github.io" class="proceed-link">AR</a>  
+		          
+		                           
+		                 
+		              <a href="http://danilka.pro" class="proceed-link">Danil Sagunov</a>  
+		          
+		                           
+		                 
+		              <a href="sth" class="proceed-link">Petr Smirnov</a>  
+		          
+		        
+		        </div>
+                      <div style="display: flex; align-items: right; " >
+                      
+                        <div style='margin: 0.2rem; font-weight: 600'> Links: </div>
+                      
+                        
+                        	
+                        	<a class="proceed-link" href="https://dl.acm.org/doi/abs/10.1007/s00037-021-00213-2"> CC  </a> 
+                        
+                        	
+                        	<a class="proceed-link" href="https://eccc.weizmann.ac.il/report/2019/178/"> ECCC  </a> 
+                        
+                      </div>
+                      
+                                  
+                    </div>                    
+                    
+              
+                
+               
+                
+            </div>
+            
+            <div class="post">
+                
+                    <div class="post-row">
+                    <a href="/posts/natural-formulas-communication/"> <h3>Proof complexity of natural formulas via communication arguments</h3></a>                        
+                    <div style='display: flex;  align-items: right' >
+		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
+		                           
+		                 
+		              <a href="https://logic.pdmi.ras.ru/~dmitrits/" class="proceed-link">Dmitry Itsykson</a>  
+		          
+		                           
+		                 
+		              <a href="https://tunyash.github.io" class="proceed-link">AR</a>  
+		          
+		        
+		        </div>
+                      <div style="display: flex; align-items: right; " >
+                      
+                        <div style='margin: 0.2rem; font-weight: 600'> Links: </div>
+                      
+                        
+                        	
+                        	<a class="proceed-link" href="https://drops.dagstuhl.de/opus/volltexte/2021/14277/"> CCC 2021  </a> 
+                        
+                        	
+                        	<a class="proceed-link" href="https://eccc.weizmann.ac.il/report/2020/184/"> ECCC  </a> 
+                        
+                      </div>
+                      
+                                  
+                    </div>                    
+                    
+              
+                
+               
+                
+            </div>
+            
+            <div class="post">
+                
+                    <div class="post-row">
+                    <a href="/posts/1bp-calculus/"> <h3>Lower Bounds on OBDD Proofs with Several Orders</h3></a>                        
+                    <div style='display: flex;  align-items: right' >
+		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
+		                           
+		                 
+		              <a href="https://www.math.ucsd.edu/~sbuss/" class="proceed-link">Sam Buss</a>  
+		          
+		                           
+		                 
+		              <a href="https://logic.pdmi.ras.ru/~dmitrits/" class="proceed-link">Dmitry Itsykson</a>  
+		          
+		                           
+		                 
+		              <a href="https://logic.pdmi.ras.ru/~knop/" class="proceed-link">Aleksandr Knop</a>  
+		          
+		                           
+		                 
+		              <a href="https://tunyash.github.io" class="proceed-link">AR</a>  
+		          
+		                           
+		                 
+		              <a href="https://logic.pdmi.ras.ru/~sokolov/" class="proceed-link">Dmitry Sokolov</a>  
+		          
+		        
+		        </div>
+                      <div style="display: flex; align-items: right; " >
+                      
+                        <div style='margin: 0.2rem; font-weight: 600'> Links: </div>
+                      
+                        
+                        	
+                        	<a class="proceed-link" href="https://dl.acm.org/doi/10.1145/3468855"> ToCL  </a> 
+                        
+                        	
+                        	<a class="proceed-link" href="https://eccc.weizmann.ac.il/report/2020/073/"> ECCC  </a> 
+                        
+                      </div>
+                      
+                                  
+                    </div>                    
+                    
+              
+                
+               
+                
+            </div>
+            
+            <div class="post">
+                
+                    <div class="post-row">
+                    <a href="/posts/tseitin-all-graphs/"> <h3>Bounded-Depth Frege Complexity of Tseitin Formulas for All Graphs</h3></a>                        
+                    <div style='display: flex;  align-items: right' >
+		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
+		                           
+		                 
+		              <a href="http://wwwusers.di.uniroma1.it/~galesi/" class="proceed-link">Nicola Galesi</a>  
+		          
+		                           
+		                 
+		              <a href="https://logic.pdmi.ras.ru/~dmitrits/" class="proceed-link">Dmitry Itsykson</a>  
+		          
+		                           
+		                 
+		              <a href="https://tunyash.github.io" class="proceed-link">AR</a>  
+		          
+		                           
+		                 
+		              <a href="http://asofronova.com/" class="proceed-link">Anasatasia Sofronova</a>  
+		          
+		        
+		        </div>
+                      <div style="display: flex; align-items: right; " >
+                      
+                        <div style='margin: 0.2rem; font-weight: 600'> Links: </div>
+                      
+                        
+                        	
+                        	<a class="proceed-link" href="https://drops.dagstuhl.de/opus/volltexte/2019/10993/pdf/LIPIcs-MFCS-2019-49.pdf"> MFCS 2019  </a> 
+                        
+                        	
+                        	<a class="proceed-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0168007222000811"> APAL 2023  </a> 
+                        
+                        	
+                        	<a class="proceed-link" href="https://eccc.weizmann.ac.il/report/2019/069"> ECCC  </a> 
+                        
+                      </div>
+                      
+                                  
+                    </div>                    
+                    
+              
+                
+               
+                
+            </div>
+            
+            <div class="post">
+                
+                    <div class="post-row">
+                    <a href="/posts/decision-trees-with-symmetries/"> <h3>On Decision Trees with Symmetries</h3></a>                        
+                    <div style='display: flex;  align-items: right' >
+		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
+		                           
+		                 
+		              <a href="https://tunyash.github.io" class="proceed-link">AR</a>  
+		          
+		        
+		        </div>
+                      <div style="display: flex; align-items: right; " >
+                      
+                        <div style='margin: 0.2rem; font-weight: 600'> Links: </div>
+                      
+                        
+                        	
+                        	<a class="proceed-link" href="https://link.springer.com/chapter/10.1007/978-3-319-90530-3_24"> CSR 2018  </a> 
+                        
+                      </div>
+                      
+                                  
+                    </div>                    
+                    
+              
+                
+               
+                
+            </div>
+            
+        </div>
+    </section>
+    
+</div>
+
+
+        </main>
+        <footer class="footer flex">
+    <section class="container">
+        <nav class="footer-links">
+            
+        </nav>
+
         
-        <p class="block__paragraph mb-0">
-         aariazanov <span class='highlight'>at</span> gmail <span class='highlight'>dot</span> com. 
-        </p>
-      </div>
-    </div>
-  </div>
+    </section>
+    <script defer src="/ts/features.dd8e5b18a6dda91367e396fd8dc9b9f83a1993065f709a53e056e0f2e9096ea1.js" 
+    data-enable-footnotes="true"
+    ></script>
+</footer>
 
-  
-  <!-- =================================== -->
-
-  <div class="block-44 py-5">
-    <div class="container">
-      <div class="row flex-column flex-md-row px-2 justify-content-center">
-        <p class="block-41__copyrights">&copy; 2021</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- =================================== -->
-
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
- <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script> -->
-
-</body>
-
+    </body>
 </html>
