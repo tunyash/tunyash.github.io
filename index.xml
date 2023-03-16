@@ -1,16 +1,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artur`s homepage on Artur Riazanov</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content in Artur`s homepage on Artur Riazanov</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 15 Oct 2022 18:40:02 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 18:40:02 +0200</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+    <title>Proving Unsatisfiability with Hitting Formulas</title>
+    <link>//localhost:1313/posts/hitting-formulas-pc/</link>
+    <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+    <author>[map[name:Yuval Filmus url:https://yuvalfilmus.cs.technion.ac.il/] map[name:Edward Hirsch url:https://edwardahirsch.github.io/edwardahirsch/] map[name:AR url:https://tunyash.github.io] map[name:Aleksandr Smal url:https://logic.pdmi.ras.ru/~smal/] map[name:Marc Vinyals url:https://marcvinyals.gitlab.io/]]</author>
+    <guid>//localhost:1313/posts/hitting-formulas-pc/</guid>
+    <description>
+        
+    </description>
+    </item>
+    
+    <item>
+    <title>Irreducible subcube partitions</title>
+    <link>//localhost:1313/posts/hitting-formulas-comb/</link>
+    <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+    <author>[map[name:Yuval Filmus url:https://yuvalfilmus.cs.technion.ac.il/] map[name:Edward Hirsch url:https://edwardahirsch.github.io/edwardahirsch/] map[name:Ferdinand Ihringer url:http://math.ihringer.org/] map[name:Sasha Kurz url:https://www.wm.uni-bayreuth.de/index.php?id=sk] map[name:AR url:https://tunyash.github.io] map[name:Aleksandr Smal url:https://logic.pdmi.ras.ru/~smal/] map[name:Marc Vinyals url:https://marcvinyals.gitlab.io/]]</author>
+    <guid>//localhost:1313/posts/hitting-formulas-comb/</guid>
+    <description>
+        
+    </description>
+    </item>
+    
     <item>
     <title>MCSP is Hard for Read-Once Nondeterministic Branching Programs</title>
-    <link>/posts/mcsp-nbp/</link>
+    <link>//localhost:1313/posts/mcsp-nbp/</link>
     <pubDate>Tue, 20 Sep 2022 19:23:03 +0200</pubDate>
     <author>[map[name:Ludmila Glinskih url:https://lglinskih.com/] map[name:AR url:https://tunyash.github.io]]</author>
-    <guid>/posts/mcsp-nbp/</guid>
+    <guid>//localhost:1313/posts/mcsp-nbp/</guid>
     <description>
         
     </description>
@@ -18,10 +40,10 @@
     
     <item>
     <title>Automating OBDD proofs is NP-hard</title>
-    <link>/posts/obdd-nonautomatability/</link>
+    <link>//localhost:1313/posts/obdd-nonautomatability/</link>
     <pubDate>Sat, 20 Aug 2022 19:23:03 +0200</pubDate>
     <author>[map[name:Dmitry Itsykson url:https://logic.pdmi.ras.ru/~dmitrits/] map[name:AR url:https://tunyash.github.io]]</author>
-    <guid>/posts/obdd-nonautomatability/</guid>
+    <guid>//localhost:1313/posts/obdd-nonautomatability/</guid>
     <description>
         
     </description>
@@ -29,10 +51,10 @@
     
     <item>
     <title>Tight Bounds for Tseitin Formulas</title>
-    <link>/posts/tight-bounds-tseitin/</link>
+    <link>//localhost:1313/posts/tight-bounds-tseitin/</link>
     <pubDate>Wed, 10 Aug 2022 19:23:03 +0200</pubDate>
     <author>[map[name:Dmitry Itsykson url:https://logic.pdmi.ras.ru/~dmitrits/] map[name:AR url:https://tunyash.github.io] map[name:Petr Smirnov url:&lt;nil&gt;]]</author>
-    <guid>/posts/tight-bounds-tseitin/</guid>
+    <guid>//localhost:1313/posts/tight-bounds-tseitin/</guid>
     <description>
         
     </description>
@@ -40,10 +62,10 @@
     
     <item>
     <title>Almost Tight Lower Bounds on Regular Resolution Refutations of Tseitin Formulas for All Constant-Degree Graphs</title>
-    <link>/posts/tseitin-regular-res/</link>
+    <link>//localhost:1313/posts/tseitin-regular-res/</link>
     <pubDate>Tue, 10 Aug 2021 19:23:03 +0200</pubDate>
     <author>[map[name:Dmitry Itsykson url:https://logic.pdmi.ras.ru/~dmitrits/] map[name:AR url:https://tunyash.github.io] map[name:Danil Sagunov url:http://danilka.pro] map[name:Petr Smirnov url:sth]]</author>
-    <guid>/posts/tseitin-regular-res/</guid>
+    <guid>//localhost:1313/posts/tseitin-regular-res/</guid>
     <description>
         
     </description>
@@ -51,10 +73,10 @@
     
     <item>
     <title>Proof complexity of natural formulas via communication arguments</title>
-    <link>/posts/natural-formulas-communication/</link>
+    <link>//localhost:1313/posts/natural-formulas-communication/</link>
     <pubDate>Sat, 10 Jul 2021 19:23:03 +0200</pubDate>
     <author>[map[name:Dmitry Itsykson url:https://logic.pdmi.ras.ru/~dmitrits/] map[name:AR url:https://tunyash.github.io]]</author>
-    <guid>/posts/natural-formulas-communication/</guid>
+    <guid>//localhost:1313/posts/natural-formulas-communication/</guid>
     <description>
         
     </description>
@@ -62,10 +84,10 @@
     
     <item>
     <title>Lower Bounds on OBDD Proofs with Several Orders</title>
-    <link>/posts/1bp-calculus/</link>
+    <link>//localhost:1313/posts/1bp-calculus/</link>
     <pubDate>Thu, 10 Jun 2021 19:23:03 +0200</pubDate>
     <author>[map[name:Sam Buss url:https://www.math.ucsd.edu/~sbuss/] map[name:Dmitry Itsykson url:https://logic.pdmi.ras.ru/~dmitrits/] map[name:Aleksandr Knop url:https://logic.pdmi.ras.ru/~knop/] map[name:AR url:https://tunyash.github.io] map[name:Dmitry Sokolov url:https://logic.pdmi.ras.ru/~sokolov/]]</author>
-    <guid>/posts/1bp-calculus/</guid>
+    <guid>//localhost:1313/posts/1bp-calculus/</guid>
     <description>
         
     </description>
@@ -73,10 +95,10 @@
     
     <item>
     <title>Bounded-Depth Frege Complexity of Tseitin Formulas for All Graphs</title>
-    <link>/posts/tseitin-all-graphs/</link>
+    <link>//localhost:1313/posts/tseitin-all-graphs/</link>
     <pubDate>Sat, 10 Aug 2019 19:23:03 +0200</pubDate>
     <author>[map[name:Nicola Galesi url:http://wwwusers.di.uniroma1.it/~galesi/] map[name:Dmitry Itsykson url:https://logic.pdmi.ras.ru/~dmitrits/] map[name:AR url:https://tunyash.github.io] map[name:Anastasia Sofronova url:http://asofronova.com/]]</author>
-    <guid>/posts/tseitin-all-graphs/</guid>
+    <guid>//localhost:1313/posts/tseitin-all-graphs/</guid>
     <description>
         
     </description>
@@ -84,10 +106,10 @@
     
     <item>
     <title>On Decision Trees with Symmetries</title>
-    <link>/posts/decision-trees-with-symmetries/</link>
+    <link>//localhost:1313/posts/decision-trees-with-symmetries/</link>
     <pubDate>Sun, 10 Jun 2018 19:23:03 +0200</pubDate>
     <author>[map[name:AR url:https://tunyash.github.io]]</author>
-    <guid>/posts/decision-trees-with-symmetries/</guid>
+    <guid>//localhost:1313/posts/decision-trees-with-symmetries/</guid>
     <description>
         
     </description>
