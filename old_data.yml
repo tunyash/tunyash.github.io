@@ -1,0 +1,84 @@
+title: "Lower Bounds on OBDD Proofs with Several Orders"
+date: 2021-06-10T19:23:03+02:00
+draft: true
+author: [{name: Sam Buss, url: https://www.math.ucsd.edu/~sbuss/}, {name: Dmitry Itsykson, url: https://logic.pdmi.ras.ru/~dmitrits/}, {name: Aleksandr Knop, url: https://logic.pdmi.ras.ru/~knop/}, {name: AR, url: https://tunyash.github.io}, {name: Dmitry Sokolov, url: https://logic.pdmi.ras.ru/~sokolov/}]
+links: [{name: ToCL, url: https://dl.acm.org/doi/10.1145/3468855}, {name: ECCC, url: https://eccc.weizmann.ac.il/report/2020/073/}]
+---
+title: "On Decision Trees with Symmetries"
+date: 2018-06-10T19:23:03+02:00
+draft: true
+author: [{name: AR, url: https://tunyash.github.io}]
+links: [{name: CSR 2018, url: https://link.springer.com/chapter/10.1007/978-3-319-90530-3_24}]
+---
+title: "Hardness Condensation by Restriction"
+date: 2024-02-10T19:23:03+02:00
+draft: true
+author: [{name: Mika Göös, url: https://theory.epfl.ch/mika/}, {name: Ilan Newman, url: https://cs.haifa.ac.il/~ilan/}, {name: AR, url: https://tunyash.github.io},  {name: Dmitry Sokolov, url: https://logic.pdmi.ras.ru/~sokolov/}]
+links: [{name: ECCC, url: https://eccc.weizmann.ac.il/report/2023/181/}]
+---
+title: "Irreducible subcube partitions"
+draft: true
+date: "2022-12-10"
+author: [{name: Yuval Filmus, url: https://yuvalfilmus.cs.technion.ac.il/},
+         {name: Edward Hirsch, url: "https://edwardahirsch.github.io/edwardahirsch/"}, 
+         {name: Ferdinand Ihringer, url: "http://math.ihringer.org/"}, 
+         {name: Sasha Kurz, url: "https://www.wm.uni-bayreuth.de/index.php?id=sk"}, 
+         {name: AR, url: https://tunyash.github.io}, 
+         {name: Aleksandr Smal, url: https://logic.pdmi.ras.ru/~smal/}, 
+         {name: Marc Vinyals, url: https://marcvinyals.gitlab.io/}]
+links: [{name: EJC 2023, url: https://www.combinatorics.org/ojs/index.php/eljc/article/view/P3.29}, {name: ArXiv, url: https://arxiv.org/abs/2212.14685}]
+---
+title: "Proving Unsatisfiability with Hitting Formulas"
+date: "2024-01-28"
+draft: true
+author: [{name: Yuval Filmus, url: https://yuvalfilmus.cs.technion.ac.il/}, {name: Edward Hirsch, url: https://edwardahirsch.github.io/edwardahirsch/}, {name: AR, url: https://tunyash.github.io}, {name: Aleksandr Smal, url: https://logic.pdmi.ras.ru/~smal/}, {name: Marc Vinyals, url: https://marcvinyals.gitlab.io/}]
+links: [{name: ITCS 2024, url: http://itcs-conf.org/itcs24/itcs24-accepted.html}, {name: ArXiv, url: https://arxiv.org/abs/2302.06241}, {name: Yuval's talk at Simons Institute, url: "https://youtube.com/live/PKSlCvswfc8?feature=shares"}]
+---
+title: "MCSP is Hard for Read-Once Nondeterministic Branching Programs"
+date: 2022-09-20T19:23:03+02:00
+draft: true
+author: [{name: Ludmila Glinskih, url: https://lglinskih.com/}, {name: AR, url: https://tunyash.github.io}]
+links: [{name: LATIN 2022, url: https://link.springer.com/chapter/10.1007/978-3-031-20624-5_38}, {name: Ludmila's slides, url: https://lglinskih.com/talks/latin2022.pdf}]
+---
+title: "Proof complexity of natural formulas via communication arguments"
+date: 2021-07-10T19:23:03+02:00
+draft: true
+author: [{name: Dmitry Itsykson, url: https://logic.pdmi.ras.ru/~dmitrits/}, {name: AR, url: https://tunyash.github.io}]
+links: [{name: CCC 2021, url: https://drops.dagstuhl.de/opus/volltexte/2021/14277/}, {name: ECCC, url: https://eccc.weizmann.ac.il/report/2020/184/}, {name: CCC talk, url: https://youtu.be/S6JaCXfOuKk}]
+---
+title: "Automating OBDD proofs is NP-hard"
+date: 2022-08-20T19:23:03+02:00
+draft: true
+author: [{name: Dmitry Itsykson, url: https://logic.pdmi.ras.ru/~dmitrits/}, {name: AR, url: https://tunyash.github.io}]
+links: [{name: MFCS 2022, url: https://drops.dagstuhl.de/opus/volltexte/2022/16857/}, {name: ECCC, url: https://eccc.weizmann.ac.il/report/2022/046/}, {name: My slides, url: OBDD_automatability_slides.pdf}]
+---
+title: "Sampling and Certifying Symmetric Functions"
+date: 2023-09-10T19:23:03+02:00
+draft: true
+author: [{name: Yuval Filmus, url: https://yuvalfilmus.cs.technion.ac.il/}, {name: Itai Leigh, url: https://www.linkedin.com/in/itai-leigh-24864641/}, {name: AR, url: https://tunyash.github.io}, {name: Dmitry Sokolov, url: https://logic.pdmi.ras.ru/~sokolov/}]
+links: [{name: RANDOM 2023, url: https://drops.dagstuhl.de/opus/volltexte/2023/18861/}, {name: ECCC, url: https://eccc.weizmann.ac.il/report/2023/071/}, {name: ArXiV, url: https://arxiv.org/abs/2305.04363}]
+---
+title: "Tight Bounds for Tseitin Formulas"
+date: 2022-08-10T19:23:03+02:00
+draft: true
+author: [{name: Dmitry Itsykson, url: https://logic.pdmi.ras.ru/~dmitrits/}, {name: AR, url: https://tunyash.github.io}, {name: Petr Smirnov, url: }]
+links: [{name: SAT 2022, url: https://drops.dagstuhl.de/opus/volltexte/2022/16680/}, {name: Petr's Slides, url: Tight_Bounds_for_Tseitin_Formulas.pdf}]
+---
+title: "Top-Down Lower Bounds for Depth-Four Circuits"
+date: 2023-11-10T19:23:03+02:00
+draft: true
+author: [{name: Mika Göös, url: https://theory.epfl.ch/mika/}, {name: AR, url: https://tunyash.github.io}, {name: Anastasia Sofronova, url: http://asofronova.com/},  {name: Dmitry Sokolov, url: https://logic.pdmi.ras.ru/~sokolov/}]
+links: [{name: FOCS 2023, url: https://focs.computer.org/2023/}, {name: ECCC, url: https://eccc.weizmann.ac.il/report/2023/049/}, {name: ArXiV, url: https://arxiv.org/abs/2304.02555}]
+---
+title: "Bounded-Depth Frege Complexity of Tseitin Formulas for All Graphs"
+date: 2019-08-10T19:23:03+02:00
+draft: true
+author: [{name: Nicola Galesi, url: http://wwwusers.di.uniroma1.it/~galesi/}, {name: Dmitry Itsykson, url: https://logic.pdmi.ras.ru/~dmitrits/}, {name: AR, url: https://tunyash.github.io}, {name: Anastasia Sofronova, url: http://asofronova.com/}]
+links: [{name: MFCS 2019, url: https://drops.dagstuhl.de/opus/volltexte/2019/10993/pdf/LIPIcs-MFCS-2019-49.pdf}, {name: APAL 2023, url: https://www.sciencedirect.com/science/article/abs/pii/S0168007222000811}, {name: ECCC, url: https://eccc.weizmann.ac.il/report/2019/069}]
+---
+title: "Almost Tight Lower Bounds on Regular Resolution Refutations of Tseitin Formulas for All Constant-Degree Graphs"
+date: 2021-08-10T19:23:03+02:00
+draft: true
+author: [{name: Dmitry Itsykson, url: https://logic.pdmi.ras.ru/~dmitrits/}, {name: AR, url: https://tunyash.github.io}, {name: Danil Sagunov, url: http://danilka.pro}, {name: Petr Smirnov, url: sth}]
+links: [{name: CC, url: https://dl.acm.org/doi/abs/10.1007/s00037-021-00213-2}, {name: ECCC, url: https://eccc.weizmann.ac.il/report/2019/178/}]
+END

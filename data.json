@@ -1,0 +1,469 @@
+[
+  {
+    "title": "Lower Bounds on OBDD Proofs with Several Orders",
+    "date": "2021-06-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["proof-complexity"],
+    "author": [
+      {
+        "name": "Sam Buss",
+        "url": "https://www.math.ucsd.edu/~sbuss/"
+      },
+      {
+        "name": "Dmitry Itsykson",
+        "url": "https://logic.pdmi.ras.ru/~dmitrits/"
+      },
+      {
+        "name": "Aleksandr Knop",
+        "url": "https://logic.pdmi.ras.ru/~knop/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      }
+    ],
+    "links": [
+      {
+        "name": "ToCL",
+        "url": "https://dl.acm.org/doi/10.1145/3468855"
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2020/073/"
+      }
+    ],
+    "abstract": "<p>This paper is motivated by seeking lower bounds on \\(\\mathrm{OBDD}(\\land, \\mathrm{weakening}, \\mathrm{reordering})\\) refutations, namely OBDD refutations that allow weakening and arbitrary reorderings. We first work with \\(1\\text{-}\\mathrm{NBP}(\\land)\\) refutations based on read-once nondeterministic branching programs. These generalize \\(\\mathrm{OBDD}(\\land, \\mathrm{reordering})\\) refutations. There are polynomial size \\(1\\text{-}\\mathrm{NBP}(\\land)\\) refutations of the pigeonhole principle, hence \\(1\\text{-}\\mathrm{NBP}(\\land)\\) is strictly stronger than \\(\\mathrm{OBDD}(\\land, \\mathrm{reordering})\\). There are also formulas that have polynomial size tree-like resolution refutations but require exponential size \\(1\\text{-}\\mathrm{NBP}(\\land)\\) refutations. As a corollary, \\(\\mathrm{OBDD}(\\land, \\mathrm{reordering})\\)does not simulate tree-like resolution, answering a previously open question.</p><p>The system \\(1\\text{-}\\mathrm{NBP}(\\land, \\exists)\\) uses projection inferences instead of weakening. \\(1\\text{-}\\mathrm{NBP}(\\land, \\exists_k)\\) is the system restricted to projection on at most \\(k\\) distinct variables. We construct explicit constant degree graphs \\(G_n\\) on \\(n\\) vertices and an \\(\\epsilon > 0\\), such that \\(1\\text{-}\\mathrm{NBP}(\\land, \\exists_{\\epsilon n})\\) refutations of the Tseitin formula for \\(G_n\\) require exponential size.</p><p>Second, we study the proof system \\(\\mathrm{OBDD}(\\land, \\mathrm{weakening}, \\mathrm{reordering}_\\ell)\\) which allows \\(\\ell\\) different variable orders in a refutation. We prove an exponential lower bound on the complexity of tree-like \\(\\mathrm{OBDD}(\\land, \\mathrm{weakening}, \\mathrm{reordering}_\\ell)\\) refutations for \\(\\ell = \\epsilon \\log n\\), where \\(n\\) is the number of variables and \\(\\epsilon > 0\\) is a constant. The lower bound is based on multiparty communication complexity."
+  },
+  {
+    "title": "On Decision Trees with Symmetries",
+    "date": "2018-06-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["proof-complexity"],
+    "author": [
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      }
+    ],
+    "links": [
+      {
+        "name": "CSR 2018",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-319-90530-3_24"
+      }
+    ],
+    "abstract": "We introduce a propositional proof system based on decision trees utilizing symmetries of formulas. We refer to this proof system as decision trees with symmetries (SDT). SDT can be polynomially simulated by the proof system SR-I introduced by <a href=\"https://link.springer.com/article/10.1007/BF00265682\">[Krishnamurthy, 1985]</a>; SR-I  extends Resolution with the symmetry rule. We show that there are polynomial-size proofs of the functional pigeonhole principle \\(\\mathrm{FPHP}_n^{n+1}\\) and of an encoding of the clique coloring principle. On the other hand we show that any SDT for the pigeonhole principle \\(\\mathrm{PHP}_n^{n+1}\\) has size \\(2^{n^{1/3-o(1)}}\\) despite that the pigeonhole principle has a lot of symmetries."
+  },
+  {
+    "title": "Hardness Condensation by Restriction",
+    "date": "2024-02-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["communication-complexity"],
+    "author": [
+      {
+        "name": "Mika G\u00f6\u00f6s",
+        "url": "https://theory.epfl.ch/mika/"
+      },
+      {
+        "name": "Ilan Newman",
+        "url": "https://cs.haifa.ac.il/~ilan/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      }
+    ],
+    "links": [
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2023/181/"
+      }
+    ],
+    "abstract": "<p>Can every \\(n\\)-bit boolean function with deterministic query complexity \\(k\\ll n\\) be restricted to \\(O(k)\\) variables such that the query complexity remains \\(\\Omega(k)\\)? That is, can query complexity be <it>condensed</it> via restriction? We study such hardness condensation questions in both query and communication complexity, proving two main results.</p><ul><li> <b>Negative:</b> Query complexity <it>cannot</it> be condensed in general: There is a function \\(f\\) with query complexity \\(k\\) such that any restriction of \\(f\\) to \\(O(k)\\) variables has query complexity \\(O(k^{3/4})\\).</li><li><b> Positive:</b> Randomised communication complexity can be condensed for the <it>sink-of-xor</it> function. This yields a quantitatively improved counterexample to the log-approximate-rank conjecture, achieving parameters conjectured by <a href=\"https://arxiv.org/abs/2009.02717\">[Chattopadhyay, Garg, and Sherif, 2021]</a>.</li> </ul>Along the way we show the existence of <it>Shearer extractors</it> --- a new type of seeded extractor whose output bits satisfy prescribed dependencies across distinct seeds."
+  },
+  {
+    "title": "Irreducible subcube partitions",
+    "draft": true,
+    "date": "2022-12-10",
+    "topics": ["combinatorics"],
+    "author": [
+      {
+        "name": "Yuval Filmus",
+        "url": "https://yuvalfilmus.cs.technion.ac.il/"
+      },
+      {
+        "name": "Edward Hirsch",
+        "url": "https://edwardahirsch.github.io/edwardahirsch/"
+      },
+      {
+        "name": "Ferdinand Ihringer",
+        "url": "http://math.ihringer.org/"
+      },
+      {
+        "name": "Sasha Kurz",
+        "url": "https://www.wm.uni-bayreuth.de/index.php?id=sk"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Aleksandr Smal",
+        "url": "https://logic.pdmi.ras.ru/~smal/"
+      },
+      {
+        "name": "Marc Vinyals",
+        "url": "https://marcvinyals.gitlab.io/"
+      }
+    ],
+    "links": [
+      {
+        "name": "EJC 2023",
+        "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/P3.29"
+      },
+      {
+        "name": "ArXiv",
+        "url": "https://arxiv.org/abs/2212.14685"
+      }
+    ],
+    "abstract": "<p>A subcube partition is a partition of the Boolean cube \\(\\{0,1\\}^n\\) into subcubes. A subcube partition is irreducible if the only sub-partitions whose union is a subcube are singletons and the entire partition. A subcube partition is tight if it “mentions” all coordinates.</p>  <p>We study extremal properties of tight irreducible subcube partitions: minimal size, minimal weight, maximal number of points, maximal size, and maximal minimum dimension. We also consider the existence of homogeneous tight irreducible subcube partitions, in which all subcubes have the same dimensions. We additionally study subcube partitions of \\(\\{0,1,\\dots,q-1\\}^n\\), and partitions of \\(\\mathbb{F}_2^n\\) into affine subspaces, in both cases focusing on the minimal size.</p><p>Our constructions and computer experiments lead to several conjectures on the extremal values of the aforementioned properties.</p>"
+  },
+  {
+    "title": "Proving Unsatisfiability with Hitting Formulas",
+    "date": "2024-01-28",
+    "draft": true,
+    "topics": ["proof-complexity"],
+    "author": [
+      {
+        "name": "Yuval Filmus",
+        "url": "https://yuvalfilmus.cs.technion.ac.il/"
+      },
+      {
+        "name": "Edward Hirsch",
+        "url": "https://edwardahirsch.github.io/edwardahirsch/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Aleksandr Smal",
+        "url": "https://logic.pdmi.ras.ru/~smal/"
+      },
+      {
+        "name": "Marc Vinyals",
+        "url": "https://marcvinyals.gitlab.io/"
+      }
+    ],
+    "links": [
+      {
+        "name": "ITCS 2024",
+        "url": "http://itcs-conf.org/itcs24/itcs24-accepted.html"
+      },
+      {
+        "name": "ArXiv",
+        "url": "https://arxiv.org/abs/2302.06241"
+      },
+      {
+        "name": "Yuval's talk at Simons",
+        "url": "https://youtube.com/live/PKSlCvswfc8?feature=shares"
+      }
+    ],
+    "abstract": "A hitting formula is a set of Boolean clauses such that any two of the clauses cannot be simultaneously falsified. Hitting formulas have been studied in many different contexts at least since <a href=\"https://doi.org/10.1137/0218026\">[Iwama, 1989]</a> and, based on experimental evidence, <a href=\"https://arxiv.org/abs/2206.15225\">[Peitl and Szeider, 2022]</a> conjectured that unsatisfiable hitting formulas are among the hardest for resolution.Using the fact that hitting formulas are easy to check for satisfiability we make them the foundation of a new static proof system Hitting: a refutation of a CNF in Hitting is an unsatisfiable hitting formula such that each of its clauses is a weakening of a clause of the refuted CNF. Comparing this system to resolution and other proof systems is equivalent to studying the hardness of hitting formulas. Our first result is that Hitting is quasi-polynomially simulated by tree-like resolution, which means that hitting formulas cannot be exponentially hard for resolution and partially refutes the conjecture of Peitl and Szeider. We show that tree-like resolution and Hitting are quasi-polynomially separated, while for resolution, this question remains open. For a system that is only quasi-polynomially stronger than tree-like resolution, Hitting is surprisingly difficult to <it>polynomially</it> simulate in another proof system. Using the ideas of Raz-Shpilka's polynomial identity testing for noncommutative circuits <a href=\"https://link.springer.com/article/10.1007/s00037-005-0188-8\">[Raz, Shpilka, 2005]</a> we show that Hitting is p-simulated by Extended Frege, but we conjecture that much more efficient simulations exist. As a byproduct, we show that a number of static (semi)algebraic systems are verifiable in deterministic polynomial time."
+  },
+  {
+    "title": "MCSP is Hard for Read-Once Nondeterministic Branching Programs",
+    "date": "2022-09-20 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+      {
+        "name": "Ludmila Glinskih",
+        "url": "https://lglinskih.com/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      }
+    ],
+    "links": [
+      {
+        "name": "LATIN 2022",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-20624-5_38"
+      },
+      {
+        "name": "Ludmila's slides",
+        "url": "https://lglinskih.com/talks/latin2022.pdf"
+      }
+    ],
+    "abstract": "<p>We show that every read-once nondeterministic branching program computing the Minimum Circuit Size Problem on inputs of length \\(N\\) has size \\(\\Omega(N^{\\log\\log(N)})\\). This is the first superpolynomial lower bound on the size of a read-once branching program computing MCSP. This lower bound is tight for the version of MCSP restricted to a linear circuit size parameter.</p><p> To show this result we adapt a conditional lower bound of  <a href=\"https://eccc.weizmann.ac.il/report/2020/183/\">[Ilango, 2020]</a> on the deterministic Turing Machine time complexity of computing \\(\\mathrm{MCSP}^{*}\\), the generalization of MCSP to partial functions. In contrast, our lower bound is unconditional and holds even for the total MCSP function. </p>"
+  },
+  {
+    "title": "Proof complexity of natural formulas via communication arguments",
+    "date": "2021-07-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["proof-complexity", "communication-complexity"],
+    "author": [
+      {
+        "name": "Dmitry Itsykson",
+        "url": "https://logic.pdmi.ras.ru/~dmitrits/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      }
+    ],
+    "links": [
+      {
+        "name": "CCC 2021",
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2021/14277/"
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2020/184/"
+      },
+      {
+        "name": "CCC talk",
+        "url": "https://youtu.be/S6JaCXfOuKk"
+      }
+    ],
+    "abstract": "We show two communication lower bounds on the clause search problem \\(\\mathrm{Search}_\\phi\\), the problem is given an assignment to the variables of an unsatisfiable CNF \\(\\phi\\) find a clause \\(C \\in \\phi\\) that is falsified by the assignment. The first lower bound is on the 2-party communication cost of \\(\\mathrm{Search}_\\phi\\) with \\(\\phi\\) encoding the perfect matching principle over the graph \\(K_{n,n+2}\\), the second is a on the number-on-forehead communication complexity of \\(\\mathrm{Search}_\\phi\\) where \\(\\phi\\) is the bitwise encoding of the pigeonhole principle. These communication lower bounds imply several interesting proof complexity lower bounds that seemed unattainable via communication reductions."
+  },
+  {
+    "title": "Automating OBDD proofs is NP-hard",
+    "date": "2022-08-20 19:23:03+02:00",
+    "draft": true,
+    "topics": ["proof-complexity", "communication-complexity"],
+    "author": [
+      {
+        "name": "Dmitry Itsykson",
+        "url": "https://logic.pdmi.ras.ru/~dmitrits/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      }
+    ],
+    "links": [
+      {
+        "name": "MFCS 2022",
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2022/16857/"
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2022/046/"
+      },
+      {
+        "name": "My slides",
+        "url": "OBDD_automatability_slides.pdf"
+      }
+    ],
+    "abstract": "We prove that the proof system  \\(\\mathrm{OBDD}(\\land, \\mathrm{weakening})\\) is not automatable unless P=NP. The proof is based upon the celebrated result of <a href=\"https://dl.acm.org/doi/abs/10.1145/3409472\">[Atserias, Muller 2019]</a> about the hardness of automatability  for resolution. The heart of the proof is lifting with multi-output indexing gadget from resolution block-width to dag-like multiparty number-in-hand communication protocol size with \\(o(n)\\) parties, where \\(n\\) is the number of variables in the non-lifted formula. A similar lifting theorem for protocols with \\(n+1\\) participants was proved by <a href=\"https://arxiv.org/abs/2004.08037\">[G\u00f6\u00f6s, Koroth, Mertz, Pitassi, 2020]</a> to establish the hardness of automatability result for Cutting Planes."
+  },
+  {
+    "title": "Sampling and Certifying Symmetric Functions",
+    "date": "2023-09-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+      {
+        "name": "Yuval Filmus",
+        "url": "https://yuvalfilmus.cs.technion.ac.il/"
+      },
+      {
+        "name": "Itai Leigh",
+        "url": "https://www.linkedin.com/in/itai-leigh-24864641/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      }
+    ],
+    "links": [
+      {
+        "name": "RANDOM 2023",
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2023/18861/"
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2023/071/"
+      },
+      {
+        "name": "ArXiV",
+        "url": "https://arxiv.org/abs/2305.04363"
+      },
+      {
+        "name": "My Slides",
+        "url": "Random_2024_slides.pdf"
+      }
+    ],
+    "abstract": "<p>A circuit \\(\\mathcal{C}\\) samples a distribution <b>X</b> with an error \\(\\epsilon\\) if the statistical distance between the output of  \\(\\mathcal{C}\\) on the uniform input and <b>X</b> is \\(\\epsilon\\). We study the hardness of sampling a uniform distribution over the set of \\(n\\)-bit strings of Hamming weight \\(k\\) denoted by \\(\\mathbf{U}^n_k\\) for <it>decision forests</it>, i.e. every output bit is computed as a decision tree of the inputs. For every \\(k\\) there is an \\(O(\\log n)\\)-depth decision forest sampling \\(\\mathbf{U}^n_k\\) with an inverse-polynomial error <a href=\"https://epubs.siam.org/doi/abs/10.1137/100814998\">[Viola 2012]</a>, <a href=\"https://dl.acm.org/doi/10.1145/2746539.2746629\">[Czumaj 2015]</a>. We show that for every \\(\\epsilon > 0\\) there exists \\(\\tau\\) such that for decision depth \\(\\tau \\log (n/k) / \\log \\log (n/k)\\), the error  for sampling \\(\\mathbf{U}^n_k\\) is at least \\(1-\\epsilon\\).  Our result is based on the recent robust  sunflower lemma <a href=\"https://arxiv.org/abs/1908.08483\">[Alweiss, Lovett, Wu, Zhang 2019]</a>, <a href=\"https://arxiv.org/abs/1909.04774\">[Rao 2019]</a>.</p><p>  Our second result is about matching a set of \\(n\\)-bit strings with the image of a \\(d\\)-<it>local</it>  circuit, i.e. such that each output bit depends on at most \\(d\\) input bits. We study the set of all \\(n\\)-bit strings whose Hamming weight is at least \\(n/2\\). We improve the previously known locality lower bound from \\(\\Omega(\\log^* n)\\) <a href=\"https://dl.acm.org/doi/abs/10.1145/2462896.2462898\">[BDKMSSTV 2013]</a> to \\(\\Omega(\\sqrt{\\log n})\\), leaving only a quartic gap from the best upper bound of \\(O(\\log^2 n)\\)."
+  },
+  {
+    "title": "Tight Bounds for Tseitin Formulas",
+    "date": "2022-08-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["proof-complexity"],
+    "author": [
+      {
+        "name": "Dmitry Itsykson",
+        "url": "https://logic.pdmi.ras.ru/~dmitrits/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Petr Smirnov",
+        "url": null
+      }
+    ],
+    "links": [
+      {
+        "name": "SAT 2022",
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2022/16680/"
+      },
+      {
+        "name": "Petr's Slides",
+        "url": "Tight_Bounds_for_Tseitin_Formulas.pdf"
+      }
+    ],
+    "abstract": "We show that for any connected graph \\(G\\) the size of any regular resolution or \\(\\mathrm{OBDD}(\\land, \\mathrm{reordering})\\) refutation of a Tseitin formula based on \\(G\\) is at least \\(2^{\\Omega(\\mathrm{tw}(G))}\\), where \\(\\mathrm{tw}(G)\\) is the treewidth of \\(G\\). These lower bounds improve upon the previously known bounds and, moreover, they are tight."
+  },
+  {
+    "title": "Top-Down Lower Bounds for Depth-Four Circuits",
+    "date": "2023-11-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+      {
+        "name": "Mika G\u00f6\u00f6s",
+        "url": "https://theory.epfl.ch/mika/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Anastasia Sofronova",
+        "url": "http://asofronova.com/"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      }
+    ],
+    "links": [
+      {
+        "name": "FOCS 2023",
+        "url": "https://doi.org/10.1109/FOCS57990.2023.00063"
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2023/049/"
+      },
+      {
+        "name": "ArXiV",
+        "url": "https://arxiv.org/abs/2304.02555"
+      },
+      {
+        "name": "Mika's talk at Simons",
+        "url": "https://www.youtube.com/live/DdeOJaWF4jo"
+      }
+    ],
+    "abstract": "We present a top-down lower-bound method for depth-\\(4\\)  boolean circuits. In particular, we give a new proof of the well-known result that the parity function requires depth-\\(4\\) circuits of size exponential in \\(n^{1/3}\\). Our proof is an application of robust sunflowers and block unpredictability."
+  },
+  {
+    "title": "Bounded-Depth Frege Complexity of Tseitin Formulas for All Graphs",
+    "date": "2019-08-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["proof-complexity"],
+    "author": [
+      {
+        "name": "Nicola Galesi",
+        "url": "http://wwwusers.di.uniroma1.it/~galesi/"
+      },
+      {
+        "name": "Dmitry Itsykson",
+        "url": "https://logic.pdmi.ras.ru/~dmitrits/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Anastasia Sofronova",
+        "url": "http://asofronova.com/"
+      }
+    ],
+    "links": [
+      {
+        "name": "MFCS 2019",
+        "url": "https://drops.dagstuhl.de/opus/volltexte/2019/10993/pdf/LIPIcs-MFCS-2019-49.pdf"
+      },
+      {
+        "name": "APAL 2023",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168007222000811"
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2019/069"
+      },
+      {
+        "name": "Nicola's talk at Banff",
+        "url": "https://www.birs.ca/events/2020/5-day-workshops/20w5144/videos/watch/202001231632-Galesi.html"
+      }
+    ],
+    "abstract": "We prove that there is a constant \\(K\\) such that <it>Tseitin</it> formulas for an undirected graph \\(G\\) requires proofs of size \\(2^{\\mathrm{tw}(G)^{\\Omega(1/d)}}\\) in depth \\(d\\) Frege systems for \\(d<\\frac{K \\log n}{\\log \\log n}\\), where \\(\\mathrm{tw}(G)\\) is the treewidth of \\(G\\). This extends  Hastad's recent lower bound for the grid graph to any graph. Furthermore, we prove tightness of our bound up to a multiplicative constant in the top exponent. Namely, we show that if a Tseitin formula for a graph \\(G\\) has size \\(s\\), then for all large enough \\(d\\), it has a depth \\(d\\) Frege proof of size \\(2^{\\mathrm{tw}(G)^{O(1/d)}} \\mathrm{poly}(s)\\). Through this result we settle a question posed by  <a href=\"https://link.springer.com/article/10.1007/s00037-011-0029-x\">[Alekhnovich, Razborov, 2011]</a> about the efficient search for resolution proofs of Tseitin formulas over any graph."
+  },
+  {
+    "title": "Almost Tight Lower Bounds on Regular Resolution Refutations of Tseitin Formulas for All Constant-Degree Graphs",
+    "date": "2021-08-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["proof-complexity"],
+    "author": [
+      {
+        "name": "Dmitry Itsykson",
+        "url": "https://logic.pdmi.ras.ru/~dmitrits/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Danil Sagunov",
+        "url": "http://danilka.pro"
+      },
+      {
+        "name": "Petr Smirnov",
+        "url": "sth"
+      }
+    ],
+    "links": [
+      {
+        "name": "CC",
+        "url": "https://dl.acm.org/doi/abs/10.1007/s00037-021-00213-2"
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2019/178/"
+      },
+      {
+        "name": "Dmitry's talk at Banff",
+        "url": "https://www.birs.ca/events/2020/5-day-workshops/20w5144/videos/watch/202001231100-Itsykson.html"
+      }
+    ],
+    "abstract": "We prove that the size of any regular resolution refutation of a Tseitin formula \\(\\mathrm{Ts}(G,c)\\) based on a connected graph \\(G=(V,E)\\) is at least \\(2^{\\Omega(\\mathrm{tw}(G)/\\log |V|)}\\), where \\(\\mathrm{tw}(G)\\) denotes the treewidth of a graph \\(G\\). For constant-degree graphs there is known upper bound \\(2^{O(\\mathrm{tw}(G))}\\mathrm{poly}(|V|)\\)  <a href=\"https://link.springer.com/article/10.1007/s00037-011-0029-x\">[Alekhnovich, Razborov, 2011]</a>, <a href=\"https://dl.acm.org/doi/10.1145/3378667\">[Galesi, Talebanfard, Torán 2020]</a>, so our lower bound is tight up to a logarithmic factor in the exponent." 
+  }
+]

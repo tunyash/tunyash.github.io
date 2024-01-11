@@ -1,0 +1,166 @@
+.post-row {
+    align-self: center;
+    border-radius: 10pt;
+    margin: 5pt;
+    display: block;
+    padding: 5pt;
+    color: #001524;
+    border:#7E485A;
+    border-style: dashed;
+    border-width: 1pt;
+}
+
+
+a {
+    color:#7E485A;
+    margin: 2pt;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: ivory;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0pt;
+    margin: 0pt;
+}
+
+main {    
+    display:flexbox;
+}
+
+.container {
+    padding: 5pt;
+    color:#001524;
+    border-radius: 10pt;
+    margin: auto;
+    margin-top: 15pt;
+    width: 70%;
+    display: block;
+    padding: 3pt;
+}
+
+h3 {
+    margin: 1pt;
+    text-align: left;
+    margin-left: 5pt;
+}
+
+h3.paper-header:hover {
+    color: #D1B3B9;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 0pt;
+    text-align: left;
+}
+
+.navbar {
+    display: flex;
+    margin:0pt;
+    padding:2pt;
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 10000;
+    border-bottom: #001524;
+    border-bottom-width: 2pt;
+    border-bottom-style: solid;
+    background-color: #D1B3B9;
+}
+
+li {
+    border-radius: 5pt;
+}
+
+li.communication-complexity {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    background: url(communication-complexity.svg) no-repeat left top;
+    background-size: 22pt;
+    padding: 0px 0 3px 30pt;
+}
+
+li.proof-complexity {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    background: url(proof-complexity.svg) no-repeat left top;
+    padding: 0px 0 3px 30pt;
+    background-size: 22pt;
+}
+
+li.circuit-complexity {
+    list-style-type: none;
+    margin-bottom: 1rem;
+    background: url(circuit-complexity.svg) no-repeat left top;
+    padding: 0px 0 3px 30pt;
+    background-size: 22pt;
+}
+
+
+
+
+.content {
+    font-size:x-large;
+    min-width: 25%;
+    margin: 5pt;
+    overflow: clip;
+}
+
+.content-small {
+    font-size:x-large;
+    min-width: 25%;
+    max-width: 30%;
+    margin: 5pt;
+    overflow: clip;
+}
+
+img{
+    max-width: 95%;
+    max-height: 95%;
+}
+
+svg {
+    max-height: 99%;
+}
+
+img.content {
+    border-radius: 10pt;
+}
+
+.post-heading {
+    display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.footer {
+    margin: auto;
+    margin-left: 75%;
+    font-size: small;
+    
+}
+
+.papers-header-class {
+    display: flex;
+    border-style: solid;
+    padding-left: 5pt;
+
+}
+
+.paper-topic-icon {
+    height: 25pt;
+    margin-right: 2pt;
+}
+
+.papers-header-div {
+    margin-right: 20pt;
+}
