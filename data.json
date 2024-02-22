@@ -82,6 +82,10 @@
     ],
     "links": [
       {
+        "name": "STOC 2024",
+        "url": "http://acm-stoc.org/stoc2024/accepted-papers.html"
+      },
+      {
         "name": "ECCC",
         "url": "https://eccc.weizmann.ac.il/report/2023/181/"
       }
