@@ -473,5 +473,32 @@
       }
     ],
     "abstract": "We prove that the size of any regular resolution refutation of a Tseitin formula \\(\\mathrm{Ts}(G,c)\\) based on a connected graph \\(G=(V,E)\\) is at least \\(2^{\\Omega(\\mathrm{tw}(G)/\\log |V|)}\\), where \\(\\mathrm{tw}(G)\\) denotes the treewidth of a graph \\(G\\). For constant-degree graphs there is known upper bound \\(2^{O(\\mathrm{tw}(G))}\\mathrm{poly}(|V|)\\)  <a href=\"https://link.springer.com/article/10.1007/s00037-011-0029-x\">[Alekhnovich, Razborov, 2011]</a>, <a href=\"https://dl.acm.org/doi/10.1145/3378667\">[Galesi, Talebanfard, Torán 2020]</a>, so our lower bound is tight up to a logarithmic factor in the exponent." 
+  },
+  {
+	"title": "Breaking Verifiable Delay Functions in the Random Oracle Model",
+    "date": "2024-05-20 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+      {
+        "name": "Ziyi Guan",
+		"url": "..."
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Weiqiang Yuan",
+        "url": "https://scholar.google.com/citations?hl=en&user=rniJ7m4AAAAJ"
+      }
+    ],
+    "links": [
+      {
+        "name": "ePrint",
+        "url": "https://eprint.iacr.org/2024/766"
+      }
+    ],
+    "abstract": "A verifiable delay function (VDF) is a cryptographic primitive that takes a long time to compute, but produces a unique output that is efficiently and publicly verifiable.  Mahmoody, Smith and Wu (ICALP 2020) prove that VDFs satisfying both perfect completeness and adaptive perfect uniqueness do not exist in the random oracle model. Moreover, Ephraim, Freitag, Komargodski, and Pass  (EUROCRYPT 2020) construct a VDF with perfect completeness and computational uniqueness, a much weaker guarantee compare to perfect uniqueness, in the random oracle model under the repeated squaring assumption. In this work, we close the gap between existing constructions and known lower bounds by showing that VDFs with imperfect completeness and non-adaptive computational uniqueness cannot be constructed in the pure random oracle model (without additional computational assumptions)."
   }
 ]
