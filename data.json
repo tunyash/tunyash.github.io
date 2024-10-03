@@ -218,6 +218,37 @@
     "abstract": "A hitting formula is a set of Boolean clauses such that any two of the clauses cannot be simultaneously falsified. Hitting formulas have been studied in many different contexts at least since <a href=\"https://doi.org/10.1137/0218026\">[Iwama, 1989]</a> and, based on experimental evidence, <a href=\"https://arxiv.org/abs/2206.15225\">[Peitl and Szeider, 2022]</a> conjectured that unsatisfiable hitting formulas are among the hardest for resolution.Using the fact that hitting formulas are easy to check for satisfiability we make them the foundation of a new static proof system Hitting: a refutation of a CNF in Hitting is an unsatisfiable hitting formula such that each of its clauses is a weakening of a clause of the refuted CNF. Comparing this system to resolution and other proof systems is equivalent to studying the hardness of hitting formulas. Our first result is that Hitting is quasi-polynomially simulated by tree-like resolution, which means that hitting formulas cannot be exponentially hard for resolution and partially refutes the conjecture of Peitl and Szeider. We show that tree-like resolution and Hitting are quasi-polynomially separated, while for resolution, this question remains open. For a system that is only quasi-polynomially stronger than tree-like resolution, Hitting is surprisingly difficult to <it>polynomially</it> simulate in another proof system. Using the ideas of Raz-Shpilka's polynomial identity testing for noncommutative circuits <a href=\"https://link.springer.com/article/10.1007/s00037-005-0188-8\">[Raz, Shpilka, 2005]</a> we show that Hitting is p-simulated by Extended Frege, but we conjecture that much more efficient simulations exist. As a byproduct, we show that a number of static (semi)algebraic systems are verifiable in deterministic polynomial time."
   },
   {
+    "title": "Partial Minimum Branching Program Size Problem is ETH-hard",
+    "date": "2024-07-20 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+      {
+        "name": "Ludmila Glinskih",
+        "url": "https://lglinskih.com/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      }
+    ],
+    "links": [
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2024/117/"
+      },
+      {
+        "name": "ArXiV",
+        "url": "https://arxiv.org/abs/2407.04632"
+      },
+      {
+        "name": "Ludmila's slides",
+        "url": "https://lglinskih.com/talks/MBPSP_Simons.pdf"
+      }
+    ],
+    "abstract": "We show that assuming the Exponential Time Hypothesis, the Partial Minimum Branching Program Size Problem (MBPSP*) requires superpolynomial time. This result also applies to the partial minimization problems for many interesting subclasses of branching programs, such as read-k branching programs and OBDDs. Combining these results with our recent result (Glinskih and Riazanov, LATIN 2022) we obtain an unconditional superpolynomial lower bound on the size of Read-Once Nondeterministic Branching Programs (1-NBP) computing the total versions of the minimum BP, read-k-BP, and OBDD size problems. Additionally we show that it is NP-hard to check whether a given BP computing a partial Boolean function can be compressed to a BP of a given size."
+  },
+  {
     "title": "MCSP is Hard for Read-Once Nondeterministic Branching Programs",
     "date": "2022-09-20 19:23:03+02:00",
     "draft": true,
