@@ -16,12 +16,12 @@
         ],
         "links": [
           {
-            "name": "ArXiV",
-            "url": "https://arxiv.org/abs/2410.00838"
-          },
-          {
             "name": "FSTTCS 2024",
             "url": "https://www.fsttcs.org.in/2024/papers.php"
+          },
+          {
+            "name": "ArXiV",
+            "url": "https://arxiv.org/abs/2410.00838"
           }
         ],
         "abstract": "Suppose we have a two-party communication protocol for $f$ which allows the parties to make queries to an oracle computing $g$; for example, they may query an Equality oracle. To translate this protocol into a randomized protocol, we must replace the oracle with a randomized subroutine for solving $g$. If q queries are made, the standard technique requires that we boost the error of each subroutine down to $O(1/q)$, leading to communication complexity which grows as $q \\log q$. For which oracles $g$ can this naive boosting technique be improved? We focus on the oracles which can be computed by constant-cost randomized protocols, and show that the naive boosting strategy can be improved for the Equality oracle but not the 1-Hamming Distance oracle. Two surprising consequences are (1) a new example of a problem where the cost of computing $k$ independent copies grows superlinear in $k$, drastically simplifying the only previous example due to <a href=\"https://arxiv.org/abs/1908.01020\">[Blais, Brody 2019]</a>; and (2) a new proof that Equality is not complete for the class of constant-cost randomized communication <a href=\"https://arxiv.org/abs/2111.03639\">[Harms, Wild, Zamaraev, 2022]</a>; <a href=\"https://link.springer.com/article/10.1007/s11856-022-2365-8\">[Hambardzumyan, Hatami, Hatami, 2022]</a>."
@@ -233,6 +233,10 @@
       }
     ],
     "links": [
+      {
+        "name": "ITCS 2025",
+        "url": "http://itcs-conf.org/itcs25/itcs25-accepted.html"
+      },
       {
         "name": "ECCC",
         "url": "https://eccc.weizmann.ac.il/report/2024/117/"
