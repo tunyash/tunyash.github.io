@@ -565,6 +565,10 @@
     ],
     "links": [
       {
+        "name": "CRYPTO 2025",
+        "url": ""
+      },
+      {
         "name": "ePrint",
         "url": "https://eprint.iacr.org/2024/766"
       },
@@ -574,5 +578,52 @@
       }
     ],
     "abstract": "A verifiable delay function (VDF) is a cryptographic primitive that takes a long time to compute, but produces a unique output that is efficiently and publicly verifiable.  Mahmoody, Smith and Wu (ICALP 2020) prove that VDFs satisfying both perfect completeness and adaptive perfect uniqueness do not exist in the random oracle model. Moreover, Ephraim, Freitag, Komargodski, and Pass  (EUROCRYPT 2020) construct a VDF with perfect completeness and computational uniqueness, a much weaker guarantee compare to perfect uniqueness, in the random oracle model under the repeated squaring assumption. In this work, we close the gap between existing constructions and known lower bounds by showing that VDFs with imperfect completeness and non-adaptive computational uniqueness cannot be constructed in the pure random oracle model (without additional computational assumptions)."
+  },
+  {
+	"title": "Generalized Linial-Nisan Conjecture is False for DNFs",
+    "date": "2024-05-20 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+      {
+        "name": "Yaroslav Alekseev",
+        "url": "https://aleksyar.github.io"
+      },
+      {
+        "name": "Mika G\u00f6\u00f6s",
+        "url": "https://theory.epfl.ch/mika/"
+      },
+      {
+        "name": "Ziyi Guan",
+		"url": "https://ziyiguan.github.io"
+      },
+      {
+        "name": "Gilbert Maystre",
+        "url": "https://gilbert.maystre.ch"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      },
+      {
+        "name": "Weiqiang Yuan",
+        "url": "https://wwwaltzzz.github.io/"
+      }
+    ],
+    "links": [
+      {
+        "name": "CCC 2025",
+        "url": ""
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2025/058/"
+      }
+    ],
+    "abstract": "Aaronson (STOC 2010) conjectured that almost k-wise independence fools constant-depth circuits; he called this the generalised Linial-Nisan conjecture. Aaronson himself later found a counterexample for depth-3 circuits. We give here an improved counterexample for depth-2 circuits (DNFs). This shows, for instance, that Bazzi's celebrated result (k-wise independence fools DNFs) cannot be generalised in a natural way. We also propose a way to circumvent our counterexample: We define a new notion of pseudorandomness called local couplings and show that it fools DNFs and even decision lists."
   }
 ]
