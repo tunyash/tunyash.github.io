@@ -581,7 +581,7 @@
   },
   {
 	"title": "Generalized Linial-Nisan Conjecture is False for DNFs",
-    "date": "2025-08-20 19:23:03+02:00",
+    "date": "2025-08-01 19:23:03+02:00",
     "draft": true,
     "topics": ["circuit-complexity"],
     "author": [
@@ -625,5 +625,71 @@
       }
     ],
     "abstract": "Aaronson (STOC 2010) conjectured that almost k-wise independence fools constant-depth circuits; he called this the generalised Linial-Nisan conjecture. Aaronson himself later found a counterexample for depth-3 circuits. We give here an improved counterexample for depth-2 circuits (DNFs). This shows, for instance, that Bazzi's celebrated result (k-wise independence fools DNFs) cannot be generalised in a natural way. We also propose a way to circumvent our counterexample: We define a new notion of pseudorandomness called local couplings and show that it fools DNFs and even decision lists."
-  }
+  },
+  {
+	"title": "Searching for Falsified Clause in Random (log n)-CNFs is Hard for Randomized Communication",
+    "date": "2025-08-10 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Anastasia Sofronova",
+        "url": "http://asofronova.com/"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      },
+      {
+        "name": "Weiqiang Yuan",
+        "url": "https://wwwaltzzz.github.io/"
+      }
+    ],
+    "links": [
+      {
+        "name": "RANDOM 2025",
+        "url": "https://randomconference.com/random-2025-home/random-2025-accepted-papers/"
+      },
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2025/096/"
+      }
+    ],
+    "abstract": "We show that for a randomly sampled unsatisfiable \\(O(\\log n)\\)-CNF over \\(n\\) variables the randomized two-party communication cost of finding a clause falsified by the given variable assignment is linear in \\(n\\)."
+  },
+  {
+        "title": "Better Boosting of Communication Oracles, or Not",
+        "date": "2024-12-10 19:23:03+02:00",
+        "draft": true,
+        "topics": ["communication-complexity"],
+        "author": [
+          {
+           "name": "Mika G\u00f6\u00f6s",
+            "url": "https://theory.epfl.ch/mika/"
+          },
+          {
+            "name": "Nathaniel Harms",
+            "url": "https://niharms.github.io"
+          },
+          {
+            "name": "AR",
+            "url": "https://tunyash.github.io"
+          }
+        ],
+        "links": [
+          {
+            "name": "RANDOM 2025",
+            "url": "https://randomconference.com/random-2025-home/random-2025-accepted-papers/"
+          },
+          {
+            "name": "ArXiV",
+            "url": "https://arxiv.org/abs/2507.11162"
+          }
+        ],
+        "abstract": "We exhibit an \\(n\\)-bit communication problem with a constant-cost randomized protocol but which requires \\(n^{\\Omega(1)}\\) deterministic (or even non-deterministic) queries to an Equality oracle. Therefore, even constant-cost randomized protocols cannot be efficiently \"derandomized\" using Equality oracles. This improves on several recent results and answers a question from the survey of Hatami and Hatami (SIGACT News 2024). It also gives a significantly simpler and quantitatively superior proof of the main result of Fang, Göös, Harms, and Hatami (STOC 2025), that constant-cost communication does not reduce to the \\(k\\)-Hamming Distance hierarchy."
+ }
 ]
