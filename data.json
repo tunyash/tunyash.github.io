@@ -662,7 +662,7 @@
     "abstract": "We show that for a randomly sampled unsatisfiable \\(O(\\log n)\\)-CNF over \\(n\\) variables the randomized two-party communication cost of finding a clause falsified by the given variable assignment is linear in \\(n\\)."
   },
   {
-        "title": "Better Boosting of Communication Oracles, or Not",
+        "title": "Equality is Far Weaker than Constant-Cost Communication",
         "date": "2025-08-10 19:23:03+02:00",
         "draft": true,
         "topics": ["communication-complexity"],
