@@ -223,7 +223,7 @@
   },
   {
     "title": "Partial Minimum Branching Program Size Problem is ETH-hard",
-    "date": "2024-07-20 19:23:03+02:00",
+    "date": "2025-01-10 19:23:03+02:00",
     "draft": true,
     "topics": ["circuit-complexity"],
     "author": [
@@ -546,7 +546,7 @@
   },
   {
 	"title": "Breaking Verifiable Delay Functions in the Random Oracle Model",
-    "date": "2024-05-20 19:23:03+02:00",
+    "date": "2025-08-17 19:23:03+02:00",
     "draft": true,
     "topics": ["circuit-complexity"],
     "author": [
@@ -663,7 +663,7 @@
   },
   {
         "title": "Better Boosting of Communication Oracles, or Not",
-        "date": "2024-12-10 19:23:03+02:00",
+        "date": "2025-08-10 19:23:03+02:00",
         "draft": true,
         "topics": ["communication-complexity"],
         "author": [
