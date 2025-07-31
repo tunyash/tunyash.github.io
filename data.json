@@ -627,6 +627,41 @@
     "abstract": "Aaronson (STOC 2010) conjectured that almost k-wise independence fools constant-depth circuits; he called this the generalised Linial-Nisan conjecture. Aaronson himself later found a counterexample for depth-3 circuits. We give here an improved counterexample for depth-2 circuits (DNFs). This shows, for instance, that Bazzi's celebrated result (k-wise independence fools DNFs) cannot be generalised in a natural way. We also propose a way to circumvent our counterexample: We define a new notion of pseudorandomness called local couplings and show that it fools DNFs and even decision lists."
   },
   {
+	"title": "Monoton",
+    "date": "2025-09-01 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+      {
+        "name": "Bruno Cavalar",
+        "url": "https://brunopc.github.io/"
+      },
+      {
+        "name": "Mika G\u00f6\u00f6s",
+        "url": "https://theory.epfl.ch/mika/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Anastasia Sofronova",
+        "url": "http://asofronova.com/"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      }
+    ],
+    "links": [
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2025/102/"
+      }
+    ],
+    "abstract": "We show that the perfect matching function on $n$-vertex graphs requires monotone circuits of size \\(\\smash{2^{n^{\\Omega(1)}}}\\). This improves on the  \\(n^{\\Omega(\\log n)}\\) lower bound  of Razborov (1985). Our proof uses the standard approximation method together with a new sunflower lemma for matchings."
+  },
+  {
 	"title": "Searching for Falsified Clause in Random (log n)-CNFs is Hard for Randomized Communication",
     "date": "2025-08-10 19:23:03+02:00",
     "draft": true,
