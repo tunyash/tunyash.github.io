@@ -757,5 +757,80 @@
       }
     ],
     "abstract": "We consider a subclass of AC\\(^0[2]\\) circuits that simultaneously captures DNF\\(\\circ\\)Xor and depth-\\(3\\) AC\\(^0\\) circuits. For this class we show a technique for proving lower bounds inspired by the top-down approach. We give lower bounds for the middle slice function, inner product function, and affine dispersers." 
+},
+{
+	"title": "Pseudodeterministic Communication Complexity",
+    "date": "2025-11-01 19:23:03+02:00",
+    "draft": true,
+    "topics": ["communication-complexity"],
+    "author": [
+     {
+        "name": "Mika G\u00f6\u00f6s",
+        "url": "https://theory.epfl.ch/mika/"
+      },
+      {
+            "name": "Nathaniel Harms",
+            "url": "https://niharms.github.io"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Anastasia Sofronova",
+        "url": "http://asofronova.com/"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      },
+      {
+        "name": "Weiqiang Yuan",
+        "url": "https://wwwaltzzz.github.io/"
+      }
+    ],
+    "links": [
+      {
+        "name": "ArXiV",
+        "url": "https://arxiv.org/abs/2511.04794/"
+      }
+    ],
+    "abstract": "We exhibit an \\(n\\)-bit partial function with randomized communication complexity \\(O(\\log n)\\) but such that any completion of this function into a total one requires randomized communication complexity \\(n^{\\Omega(1)}\\). In particular, this shows an exponential separation between randomized and <it>pseudodeterministic</it> communication protocols. Previously, Gavinsky (2025) showed an analogous separation in the weaker model of parity decision trees. We use lifting techniques to extend his proof idea to communication complexity."
+  },
+  
+{
+	"title": "Sampling Permutations with Cell Probes is Hard",
+    "date": "2025-11-02 19:23:03+02:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "author": [
+ {
+        "name": "Yaroslav Alekseev",
+        "url": "https://aleksyar.github.io"
+      },
+      {
+        "name": "Mika G\u00f6\u00f6s",
+        "url": "https://theory.epfl.ch/mika/"
+      },
+      {
+            "name": "Konstantin Myasnikov",
+            "url": ""
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Dmitry Sokolov",
+        "url": "https://logic.pdmi.ras.ru/~sokolov/"
+      }
+    ],
+    "links": [
+      {
+        "name": "ECCC",
+        "url": "https://eccc.weizmann.ac.il/report/2025/177/download"
+      }
+    ],
+    "abstract": "Suppose we are given an infinite sequence of input cells, each initialized with a uniform random symbol from \\([n]\\). How hard is it to output a sequence in [n]n that is close to a uniform random permutation? Viola (SICOMP 2020) conjectured that if each output cell is computed by making \\(d\\) probes to input cells, then \\(d\\ge \\omega(1)\\). Our main result shows that, in fact, \\(d\\ge (\\log n)^{\\Omega(1)}\\), which  is tight up to the constant in the exponent. Our techniques also show that if the probes are nonadaptive, then \\(d \\ge n^{\\Omega(1)}\\), which is an exponential improvement over the previous nonadaptive lower bound due to Yu and Zhan (ITCS 2024). Our results also imply lower bounds against succinct data structures for storing permutations."
 }
 ]
