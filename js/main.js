@@ -13,7 +13,7 @@ let svgRevertState = [];
 
 /**
  * Toggles visibility of a paper's abstract
- * @param {number} id - The paper ID
+ * @param {string} id - The paper ID (title-based, max 15 chars)
  */
 function toggleVisibility(id) {
     const abstractElement = document.getElementById(`abstract${id}`);

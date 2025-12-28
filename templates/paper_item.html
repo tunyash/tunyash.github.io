@@ -5,7 +5,7 @@
         <div><img src="{{ topic }}.svg" style="height: 17pt; margin-right: 1pt;"></div>
         {% endfor %}
         <div>
-            <h3 class="paper-header" onclick="toggleVisibility({{ paper_id }})">{{ paper.title }}</h3>
+            <h3 class="paper-header" onclick="toggleVisibility('{{ paper_id }}')">{{ paper.title }}</h3>
         </div>
     </div>
     <div style="display: flex; align-items: right">

@@ -16,7 +16,7 @@
     </div>
     <div id="papers-container" style="display: none;">
         {% for paper in papers %}
-        {% with paper_id=loop.index0 %}
+        {% with paper_id=paper.paper_id %}
         {% include "paper_item.html" %}
         {% endwith %}
         {% endfor %}
