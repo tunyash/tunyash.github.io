@@ -1,25 +1,25 @@
-<div class="post-row" id="paper-{{ paper_id }}" style="">
+<div class="post-row" id="paper-{{ paper_id }}">
     <div class="post-heading">
         <script>paper_id_list.push(["paper-{{ paper_id }}", {{ paper.topics | tojson }}]);</script>
         {% for topic in paper.topics %}
-        <div><img src="{{ topic }}.svg" style="height: 17pt; margin-right: 1pt;"></div>
+        <div><img src="{{ topic }}.svg" class="topic-icon"></div>
         {% endfor %}
         <div>
             <h3 class="paper-header" onclick="toggleVisibility('{{ paper_id }}')">{{ paper.title }}</h3>
         </div>
     </div>
-    <div style="display: flex; align-items: right">
-        <div style="margin: 0.2rem; font-weight: 600">Authors: </div>
+    <div class="paper-authors">
+        <div class="paper-authors-label">Authors: </div>
         {% for author in paper.author %}
         <a href="{{ author.url }}" class="inside-post">{{ author.name }}</a>
         {% endfor %}
     </div>
-    <div>
+    <div class="paper-links">
         {% for link in paper.links %}
         <a href="{{ link.url }}" class="inside-post"{% if 'http' in link.url %} target="_blank"{% endif %}>{{ link.name }}</a>
         {% endfor %}
     </div>
-    <div id="abstract{{ paper_id }}" class="abstract" style="display: none;">
+    <div id="abstract{{ paper_id }}" class="abstract">
         {{ paper.abstract | safe if paper.abstract else "" }}
     </div>
 </div>

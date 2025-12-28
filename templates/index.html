@@ -10,16 +10,15 @@
         </div>
         {% for topic in topics %}
         <div id="{{ topic }}-icon" class="paper-topic-icon" onclick="filterPapers('{{ topic }}')">
-            {{ svg_contents[topic] | safe }}
+            <img src="{{ topic }}.svg" alt="{{ topic }}">
         </div>
         {% endfor %}
     </div>
-    <div id="papers-container" style="display: none;">
-        {% for paper in papers %}
-        {% with paper_id=paper.paper_id %}
-        {% include "paper_item.html" %}
-        {% endwith %}
-        {% endfor %}
+    <div id="papers-container" class="papers-container-hidden">
+        <!-- Papers are loaded dynamically via JavaScript -->
+        <div id="papers-loading" class="papers-loading">
+            Loading papers...
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -1,1 +1,18 @@
-<p>A circuit \(\mathcal{C}\) samples a distribution <b>X</b> with an error \(\epsilon\) if the statistical distance between the output of  \(\mathcal{C}\) on the uniform input and <b>X</b> is \(\epsilon\). We study the hardness of sampling a uniform distribution over the set of \(n\)-bit strings of Hamming weight \(k\) denoted by \(\mathbf{U}^n_k\) for <it>decision forests</it>, i.e. every output bit is computed as a decision tree of the inputs. For every \(k\) there is an \(O(\log n)\)-depth decision forest sampling \(\mathbf{U}^n_k\) with an inverse-polynomial error <a href="https://epubs.siam.org/doi/abs/10.1137/100814998">[Viola 2012]</a>, <a href="https://dl.acm.org/doi/10.1145/2746539.2746629">[Czumaj 2015]</a>. We show that for every \(\epsilon > 0\) there exists \(\tau\) such that for decision depth \(\tau \log (n/k) / \log \log (n/k)\), the error  for sampling \(\mathbf{U}^n_k\) is at least \(1-\epsilon\).  Our result is based on the recent robust  sunflower lemma <a href="https://arxiv.org/abs/1908.08483">[Alweiss, Lovett, Wu, Zhang 2019]</a>, <a href="https://arxiv.org/abs/1909.04774">[Rao 2019]</a>.</p><p>  Our second result is about matching a set of \(n\)-bit strings with the image of a \(d\)-<it>local</it>  circuit, i.e. such that each output bit depends on at most \(d\) input bits. We study the set of all \(n\)-bit strings whose Hamming weight is at least \(n/2\). We improve the previously known locality lower bound from \(\Omega(\log^* n)\) <a href="https://dl.acm.org/doi/abs/10.1145/2462896.2462898">[BDKMSSTV 2013]</a> to \(\Omega(\sqrt{\log n})\), leaving only a quartic gap from the best upper bound of \(O(\log^2 n)\).
+<p>A circuit \(\mathcal{C}\) samples a distribution <b>X</b> with an error \(\epsilon\) if the statistical 
+    distance between the output of  \(\mathcal{C}\) on the uniform input and <b>X</b> is \(\epsilon\). We
+     study the hardness of sampling a uniform distribution over the set of \(n\)-bit strings of Hamming weight
+      \(k\) denoted by \(\mathbf{U}^n_k\) for <it>decision forests</it>, i.e. every output bit is computed 
+      as a decision tree of the inputs. For every \(k\) there is an \(O(\log n)\)-depth decision forest sampling
+       \(\mathbf{U}^n_k\) with an inverse-polynomial error
+        <a href="https://epubs.siam.org/doi/abs/10.1137/100814998">[Viola 2012]</a>, 
+        <a href="https://dl.acm.org/doi/10.1145/2746539.2746629">[Czumaj 2015]</a>. We show that for 
+        every \(\epsilon > 0\) there exists \(\tau\) such that for decision depth \(\tau \log (n/k) / \log \log (n/k)\),
+         the error  for sampling \(\mathbf{U}^n_k\) is at least \(1-\epsilon\).  Our result is based on the recent 
+         robust  sunflower lemma <a href="https://arxiv.org/abs/1908.08483">[Alweiss, Lovett, Wu, Zhang 2019]</a>,
+          <a href="https://arxiv.org/abs/1909.04774">[Rao 2019]</a>.</p><p>  Our second result is about matching 
+            a set of \(n\)-bit strings with the image of a \(d\)-<it>local</it>  circuit, i.e. such that each 
+            output bit depends on at most \(d\) input bits. We study the set of all \(n\)-bit strings whose
+             Hamming weight is at least \(n/2\). We improve the previously known locality lower bound from 
+             \(\Omega(\log^* n)\) <a href="https://dl.acm.org/doi/abs/10.1145/2462896.2462898">[BDKMSSTV 2013]</a>
+             to \(\Omega(\sqrt{\log n})\), 
+            leaving only a quartic gap from the best upper bound of \(O(\log^2 n)\).
