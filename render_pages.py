@@ -1,66 +1,80 @@
+#!/usr/bin/env python3
+"""
+Build script for generating the website HTML from templates and data.
+Uses Jinja2 for templating.
+"""
+
 import json
 import datetime
-import time
-
-def read_whole_file(filename : str) -> str:
-    descriptor = open(filename, 'r')
-    result = descriptor.read()
-    descriptor.close()
-    return result
-
-def generate_paper_html(paper, id) -> str:
-    result = ""
-    result += "<div class=\"post-row\" id=\"paper-%d\" style=""> <div class=\"post-heading\">" % id
-    result += "<script>paper_id_list.push([\"paper-%d\", %s]);</script>" % (id, str(paper['topics']))
-    for topic in paper['topics']:
-        result += "<div><img src=\"%s.svg\" style=\"height: 17pt; margin-right: 1pt;\"></div>" % topic
-    result += "<div> <h3 class=\"paper-header\" onclick=\"toggleVisibility(%d)\">%s</h3></div>" % (id, paper['title'])
-    result += "</div>"
-    result +=  """
-                <div style='display: flex;  align-items: right' >
-		        <div style='margin: 0.2rem; font-weight: 600'>Authors: </div>
-            """
-    for author in paper['author']:
-        result += "<a href=\"%s\" class=\"inside-post\">%s</a>" % (author['url'], author['name'])
-    result += """
-                </div>
-                <div style="display: flex; align-items: right; " >                      
-                <div style='margin: 0.2rem; font-weight: 600'> Links: </div>
-            """
-    for link in paper['links']:
-        result += "<a href=\"%s\" class=\"inside-post\">%s</a>" % (link['url'], link['name'])                           
-    result += "</div>"
-    result += "<div id = \"abstract%d\" class=\"abstract\" style=\"display: none;\">%s</div>" % (id, paper['abstract'] if 'abstract' in paper else "")
-    result += "</div>"
-    return result
-
-papers = json.load(open('data.json', 'r'))
-header_html = read_whole_file('header.html')
-footer_html = read_whole_file('footer.html')
-intro_html = read_whole_file('intro.html')
+from pathlib import Path
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
-# Generate the main page
-index = open('index2.html', 'w')
+def read_svg_file(filename: str) -> str:
+    """Read an SVG file and return its contents."""
+    svg_path = Path(filename)
+    if svg_path.exists():
+        return svg_path.read_text()
+    return ""
 
-index.write(header_html)
-index.write(intro_html)
 
-index.write("""
-            <div class=\"container\">
-            <div class=\"papers-header-class\">
-            <div class=\"papers-header-div\"><h2 id=\"papers-header\">Papers</h2></div>
-            """)
-for topic in ["all", "proof-complexity", "communication-complexity", "circuit-complexity", "combinatorics"]:
-    svg_body = read_whole_file(topic + ".svg")
-    index.write("<div id=\"%s-icon\" class=\"paper-topic-icon\" onclick=\"filterPapers('%s')\">%s</div>" % (topic, topic, svg_body))
-index.write("""</div>
-            <div id=\"papers-container\" style=\"display: none;\">
-            """)
-for id, paper in enumerate(sorted(papers, key=lambda paper: -datetime.datetime.fromisoformat(paper['date']).timestamp())):
-    index.write(generate_paper_html(paper, id))
-index.write("</div></div>")
+def load_papers(data_file: str) -> list:
+    """Load papers from JSON file and sort by date (newest first)."""
+    with open(data_file, 'r', encoding='utf-8') as f:
+        papers = json.load(f)
+    
+    # Sort by date (newest first)
+    sorted_papers = sorted(
+        papers,
+        key=lambda paper: -datetime.datetime.fromisoformat(paper['date']).timestamp()
+    )
+    
+    return sorted_papers
 
-index.write(footer_html % datetime.date.today())
 
-index.close()
+def get_all_topics() -> list:
+    """Return list of all available topics, with 'all' first."""
+    return ["all", "proof-complexity", "communication-complexity", "circuit-complexity", "combinatorics"]
+
+
+def main():
+    """Generate the main index.html file from templates."""
+    # Setup paths
+    base_dir = Path(__file__).parent
+    templates_dir = base_dir / "templates"
+    data_file = base_dir / "data.json"
+    output_file = base_dir / "index.html"
+    
+    # Load data
+    papers = load_papers(data_file)
+    
+    # Setup Jinja2 environment
+    env = Environment(
+        loader=FileSystemLoader(str(templates_dir)),
+        autoescape=select_autoescape(['html', 'xml'])
+    )
+    
+    # Load SVG files for topics
+    topics = get_all_topics()
+    svg_contents = {}
+    for topic in topics:
+        svg_contents[topic] = read_svg_file(base_dir / f"{topic}.svg")
+    
+    # Get template
+    template = env.get_template('index.html')
+    
+    # Render template
+    rendered_html = template.render(
+        papers=papers,
+        topics=topics,
+        svg_contents=svg_contents,
+        update_date=datetime.date.today().isoformat()
+    )
+    
+    # Write output
+    output_file.write_text(rendered_html, encoding='utf-8')
+    print(f"Successfully generated {output_file}")
+
+
+if __name__ == "__main__":
+    main()
