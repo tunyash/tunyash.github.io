@@ -1,5 +1,38 @@
 [
   {
+    "title": "Resolution Over Linear Equations: Combinatorial Games for Tree-like Size and Space",
+    "date": "2024-09-09 19:23:03+02:00",
+    "draft": true,
+    "topics": [
+      "proof-complexity"
+    ],
+    "author": [
+      {
+        "name": "Svyatoslav Gryaznov",
+        "url": "https://dblp.org/pid/243/3837.html"
+      },
+      {
+        "name": "Sergei Ovcharov",
+        "url": "https://dblp.org/pid/355/1208.html"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      }
+    ],
+    "links": [
+      {
+        "name": "ToCT",
+        "url": "https://dl.acm.org/doi/abs/10.1145/3675415"
+      },
+      {
+        "name": "ArXiv",
+        "url": "https://arxiv.org/abs/2404.08370"
+      }
+    ],
+    "paper_id": "resolution-over"
+  },
+  {
     "title": "Better Boosting of Communication Oracles, or Not",
     "date": "2024-12-10 19:23:03+02:00",
     "draft": true,
