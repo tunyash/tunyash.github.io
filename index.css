@@ -302,12 +302,28 @@ svg {
     display: flex;
     border-style: solid;
     padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
     align-items: center;
     gap: var(--spacing-sm);
+    justify-content: space-between;
 }
 
 .papers-header-div {
     margin-right: var(--spacing-xxl);
+}
+
+.topic-name-display {
+    margin-left: auto;
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    padding-left: var(--spacing-md);
+    font-weight: 500;
+}
+
+.topic-name-display.visible {
+    opacity: 1;
 }
 
 .paper-topic-icon {
@@ -468,6 +484,14 @@ li.circuit-complexity {
     
     .papers-header-div {
         margin-right: var(--spacing-lg);
+    }
+    
+    .topic-name-display {
+        width: 100%;
+        margin-left: 0;
+        margin-top: var(--spacing-sm);
+        padding-left: 0;
+        text-align: left;
     }
     
     .footer {

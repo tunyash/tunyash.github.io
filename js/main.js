@@ -92,6 +92,54 @@ function filterPapers(topic) {
     if (topicIcon) {
         topicIcon.classList.add('active');
     }
+    
+    // Show topic name
+    showTopicName(topic);
+}
+
+/**
+ * Format topic name for display (convert dashes to spaces and capitalize)
+ * @param {string} topic - The topic ID (e.g., 'proof-complexity')
+ * @returns {string} Formatted topic name (e.g., 'Proof Complexity')
+ */
+function formatTopicName(topic) {
+    if (topic === 'all') {
+        return 'All Papers';
+    }
+    return topic
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+/**
+ * Show topic name in the display area
+ * @param {string} topic - The topic ID
+ */
+function showTopicName(topic) {
+    const topicNameDisplay = document.getElementById('topic-name-display');
+    if (topicNameDisplay) {
+        topicNameDisplay.textContent = formatTopicName(topic);
+        topicNameDisplay.classList.add('visible');
+    }
+}
+
+/**
+ * Hide topic name display (used on mouseleave)
+ */
+function hideTopicName() {
+    const topicNameDisplay = document.getElementById('topic-name-display');
+    const activeIcon = document.querySelector('.paper-topic-icon.active');
+    
+    // Only hide if no topic is currently active
+    if (topicNameDisplay && !activeIcon) {
+        topicNameDisplay.classList.remove('visible');
+        topicNameDisplay.textContent = '';
+    } else if (topicNameDisplay && activeIcon) {
+        // Keep showing the active topic name
+        const activeTopicId = activeIcon.id.replace('-icon', '');
+        showTopicName(activeTopicId);
+    }
 }
 
 /**
@@ -306,4 +354,6 @@ window.paper_id_list = paper_id_list;
 window.toggleVisibility = toggleVisibility;
 window.filterPapers = filterPapers;
 window.getData = initializePage;
+window.showTopicName = showTopicName;
+window.hideTopicName = hideTopicName;
 

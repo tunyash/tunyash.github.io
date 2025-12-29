@@ -75,26 +75,27 @@
             <h2 id="papers-header">Papers</h2>
         </div>
         
-        <div id="all-icon" class="paper-topic-icon" onclick="filterPapers('all')">
+        <div id="all-icon" class="paper-topic-icon" onclick="filterPapers('all')" onmouseenter="showTopicName('all')" onmouseleave="hideTopicName()">
             <img src="all.svg" alt="all">
         </div>
         
-        <div id="proof-complexity-icon" class="paper-topic-icon" onclick="filterPapers('proof-complexity')">
+        <div id="proof-complexity-icon" class="paper-topic-icon" onclick="filterPapers('proof-complexity')" onmouseenter="showTopicName('proof-complexity')" onmouseleave="hideTopicName()">
             <img src="proof-complexity.svg" alt="proof-complexity">
         </div>
         
-        <div id="communication-complexity-icon" class="paper-topic-icon" onclick="filterPapers('communication-complexity')">
+        <div id="communication-complexity-icon" class="paper-topic-icon" onclick="filterPapers('communication-complexity')" onmouseenter="showTopicName('communication-complexity')" onmouseleave="hideTopicName()">
             <img src="communication-complexity.svg" alt="communication-complexity">
         </div>
         
-        <div id="circuit-complexity-icon" class="paper-topic-icon" onclick="filterPapers('circuit-complexity')">
+        <div id="circuit-complexity-icon" class="paper-topic-icon" onclick="filterPapers('circuit-complexity')" onmouseenter="showTopicName('circuit-complexity')" onmouseleave="hideTopicName()">
             <img src="circuit-complexity.svg" alt="circuit-complexity">
         </div>
         
-        <div id="combinatorics-icon" class="paper-topic-icon" onclick="filterPapers('combinatorics')">
+        <div id="combinatorics-icon" class="paper-topic-icon" onclick="filterPapers('combinatorics')" onmouseenter="showTopicName('combinatorics')" onmouseleave="hideTopicName()">
             <img src="combinatorics.svg" alt="combinatorics">
         </div>
         
+        <div id="topic-name-display" class="topic-name-display"></div>
     </div>
     <div id="papers-container" class="papers-container-hidden">
         <!-- Papers are loaded dynamically via JavaScript -->
@@ -106,6 +107,6 @@
 
 </main>
             
-<div class="footer">Updated on 2025-12-28</div>
+<div class="footer">Updated on 2025-12-29</div>
 </body>
 </html>

@@ -9,10 +9,11 @@
             <h2 id="papers-header">Papers</h2>
         </div>
         {% for topic in topics %}
-        <div id="{{ topic }}-icon" class="paper-topic-icon" onclick="filterPapers('{{ topic }}')">
+        <div id="{{ topic }}-icon" class="paper-topic-icon" onclick="filterPapers('{{ topic }}')" onmouseenter="showTopicName('{{ topic }}')" onmouseleave="hideTopicName()">
             <img src="{{ topic }}.svg" alt="{{ topic }}">
         </div>
         {% endfor %}
+        <div id="topic-name-display" class="topic-name-display"></div>
     </div>
     <div id="papers-container" class="papers-container-hidden">
         <!-- Papers are loaded dynamically via JavaScript -->
