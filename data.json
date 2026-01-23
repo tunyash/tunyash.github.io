@@ -832,6 +832,15 @@
       {
         "name": "ECCC",
         "url": "https://eccc.weizmann.ac.il/report/2025/024/"
+      },
+      {
+        
+        "name": "Anastasia's talk at ITCS",
+        "url": "https://www.youtube.com/watch?v=xhbF0LTMAmI"
+      },
+      {
+        "name": "Anastasia's talk at MIAO",
+        "url": "https://www.youtube.com/watch?v=tKTw6qs4xVw"
       }
     ],
     "paper_id": "lower-bounds-be"
