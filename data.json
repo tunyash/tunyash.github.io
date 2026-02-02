@@ -726,6 +726,10 @@
     ],
     "links": [
       {
+            "name": "STOC 2026",
+            "url": "https://acm-stoc.org/stoc2026/"
+      },
+      {
         "name": "ECCC",
         "url": "https://eccc.weizmann.ac.il/report/2025/102/"
       }
@@ -880,6 +884,10 @@
     ],
     "links": [
       {
+        "name": "STOC 2026",
+        "url": "https://acm-stoc.org/stoc2026/"
+      },
+      {
         "name": "ArXiV",
         "url": "https://arxiv.org/abs/2511.04794/"
       }
@@ -916,6 +924,10 @@
       }
     ],
     "links": [
+      {
+            "name": "STOC 2026",
+            "url": "https://acm-stoc.org/stoc2026/"
+      },
       {
         "name": "ECCC",
         "url": "https://eccc.weizmann.ac.il/report/2025/177/download"
