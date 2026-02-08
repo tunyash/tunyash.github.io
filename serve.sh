@@ -1,7 +1,7 @@
 #!/bin/bash
 # Simple script to serve the website locally for development
 
-PORT=${1:-8000}
+PORT=${1:-800}
 
 echo "Starting local server on port $PORT..."
 echo "Open http://localhost:$PORT in your browser"

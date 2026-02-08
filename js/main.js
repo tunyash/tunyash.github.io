@@ -65,8 +65,11 @@ function filterPapers(topic) {
     papersContainer.classList.remove('papers-container-hidden');
     papersContainer.style.display = 'block';
 
+    // Track which years have at least one visible paper
+    const visibleYears = new Set();
+
     // Filter papers
-    paper_id_list.forEach(([paperId, topics]) => {
+    paper_id_list.forEach(([paperId, topics, year]) => {
         const paperElement = document.getElementById(paperId);
         if (!paperElement) {
             return;
@@ -76,9 +79,22 @@ function filterPapers(topic) {
         if (isTopical) {
             paperElement.style.display = 'block';
             paperElement.classList.remove('hidden');
+            visibleYears.add(year);
         } else {
             paperElement.style.display = 'none';
             paperElement.classList.add('hidden');
+        }
+    });
+
+    // Update year divider visibility
+    document.querySelectorAll('.year-divider').forEach(divider => {
+        const year = divider.dataset.year;
+        if (visibleYears.has(year)) {
+            divider.style.display = '';
+            divider.classList.remove('hidden');
+        } else {
+            divider.style.display = 'none';
+            divider.classList.add('hidden');
         }
     });
 
@@ -259,6 +275,15 @@ function escapeHtml(text) {
 }
 
 /**
+ * Extract year from a paper's date string
+ * @param {string} dateStr - Date string (e.g., "2024-09-09 19:23:03+02:00" or "2022-12-10")
+ * @returns {string} The year (e.g., "2024")
+ */
+function getYear(dateStr) {
+    return dateStr.substring(0, 4);
+}
+
+/**
  * Render all papers to the papers container
  * @param {Array} papers - Array of paper objects
  */
@@ -274,12 +299,22 @@ async function renderPapers(papers) {
     // Reset paper_id_list (clear array, don't reassign to maintain reference)
     paper_id_list.length = 0;
     
-    // Render each paper
+    let currentYear = null;
+    
+    // Render each paper, inserting year dividers when the year changes
     for (const paper of papers) {
         const paperId = paper.paper_id;
+        const year = getYear(paper.date);
         
-        // Register paper for filtering
-        paper_id_list.push([`paper-${paperId}`, paper.topics]);
+        // Insert year divider if this is a new year
+        if (year !== currentYear) {
+            currentYear = year;
+            const yearHtml = `<div class="year-divider" id="year-${year}" data-year="${year}"><span>${year}</span></div>`;
+            container.insertAdjacentHTML('beforeend', yearHtml);
+        }
+        
+        // Register paper for filtering (include year for visibility checks)
+        paper_id_list.push([`paper-${paperId}`, paper.topics, year]);
         
         // Render paper (abstracts loaded on demand)
         const paperHtml = renderPaper(paper, '');
