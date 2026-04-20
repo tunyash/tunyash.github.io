@@ -931,6 +931,10 @@
       {
         "name": "ECCC",
         "url": "https://eccc.weizmann.ac.il/report/2025/177/download"
+      },
+      {
+        "name": "BARC Talk Slides",
+        "url": "cards_shuffling2.pptx"
       }
     ],
     "paper_id": "sampling-permut"
