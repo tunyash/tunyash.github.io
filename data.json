@@ -1,5 +1,46 @@
 [
   {
+    "title": "Spiky Rank and Its Applications to Rigidity and Circuits",
+    "date": "2026-07-10 19:23:03+02:00",
+    "draft": true,
+    "topics": [
+      "communication-complexity", "circuit-complexity"
+    ],
+    "author": [
+      {
+        "name": "Lianna Hambardzumyan",
+        "url": "https://www.cs.mcgill.ca/~lhamba/"
+      },
+      {
+        "name": "Konstantin Myasnikov",
+        "url": "https://people.epfl.ch/konstantin.myasnikov"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      },
+      {
+        "name": "Morgan Shirley",
+        "url": "https://morganfshirley.com/"
+      },
+      {
+        "name": "Adi Shraibman",
+        "url": "https://www2.mta.ac.il/~adish/"
+      }
+    ],
+    "links": [
+      {
+        "name": "ICALP 2026",
+        "url": "https://icalppodcspaa2026.cs.rhul.ac.uk"
+      },
+      {
+        "name": "ArXiV",
+        "url": "https://arxiv.org/abs/2602.23503"
+      }
+    ],
+    "paper_id": "spiky-rank-and"
+  },
+  {
     "title": "Resolution Over Linear Equations: Combinatorial Games for Tree-like Size and Space",
     "date": "2024-09-09 19:23:03+02:00",
     "draft": true,
