@@ -1,5 +1,47 @@
 [
   {
+    "title": "Average-Case Hardness of Binary-Encoded Clique in Proof and Communication Complexity",
+    "date": "2026-07-10 19:23:03+02:00",
+    "draft": true,
+    "topics": [
+      "proof-complexity",
+      "communication-complexity"
+    ],
+    "author": [
+      {
+        "name": "Susanna F. de Rezende",
+        "url": "https://derezende.github.io/"
+      },
+      {
+        "name": "David Engström",
+        "url": "https://www.lunduniversity.lu.se/lucat/user/683ebfa5552db70164f073103b541283"
+      },
+      {
+        "name": "Yassine Ghannane",
+        "url": "https://yass-g.github.io/"
+      },
+      {
+        "name": "Duri Andrea Janett",
+        "url": "https://durijanett.github.io/"
+      },
+      {
+        "name": "AR",
+        "url": "https://tunyash.github.io"
+      }
+    ],
+    "links": [
+      {
+        "name": "ICALP 2026",
+        "url": "https://icalppodcspaa2026.cs.rhul.ac.uk/icalp-accepted/"
+      },
+      {
+        "name": "ArXiV",
+        "url": "https://arxiv.org/abs/2605.10941"
+      }
+    ],
+    "paper_id": "average-case-ha"
+  },
+  {
     "title": "Spiky Rank and Its Applications to Rigidity and Circuits",
     "date": "2026-07-10 19:23:03+02:00",
     "draft": true,
