@@ -1,14 +1,23 @@
-/* CSS Variables (Custom Properties) */
+/* CSS Variables — palette from profile photo (red hat, powder-blue tiles, navy accent) */
 :root {
-    /* Colors */
-    --color-text-primary: #001524;
-    --color-link: #7E485A;
-    --color-link-hover: #D1B3B9;
-    --color-background: ivory;
-    --color-border: #7E485A;
-    --color-navbar-bg: #D1B3B9;
-    --color-navbar-border: #001524;
-    
+    --color-red: #E60000;
+    --color-red-dark: #B80000;
+    --color-blue: #7EC8E3;
+    --color-blue-pale: #E8F4FA;
+    --color-blue-deep: #5BA8C4;
+    --color-navy: #1B3A5C;
+    --color-text-primary: #2C2419;
+    --color-link: #1B3A5C;
+    --color-link-hover: #E60000;
+    --color-background: #F0F8FC;
+    --color-surface: #FFFFFF;
+    --color-border: #E60000;
+    --color-border-soft: rgba(30, 58, 92, 0.18);
+    --color-navbar-bg: #7EC8E3;
+    --color-navbar-border: #1B3A5C;
+    --shadow-playful: 4px 4px 0 rgba(230, 0, 0, 0.35);
+    --shadow-card: 0 4px 14px rgba(27, 58, 92, 0.1);
+
     /* Spacing */
     --spacing-xs: 0.2rem;
     --spacing-sm: 0.3rem;
@@ -16,9 +25,9 @@
     --spacing-lg: 1rem;
     --spacing-xl: 1.5rem;
     --spacing-xxl: 2rem;
-    
+
     /* Typography */
-    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
     --font-size-base: 1rem;
     --font-size-sm: 0.875rem;
     --font-size-lg: 1.125rem;
@@ -27,18 +36,20 @@
     --line-height-base: 1.6;
     --line-height-tight: 1.4;
     --line-height-loose: 1.8;
-    
+
     /* Layout */
-    --border-radius: 0.625rem; /* 10pt */
-    --border-radius-sm: 0.313rem; /* 5pt */
-    --border-width: 0.063rem; /* 1pt */
+    --border-radius: 0.75rem;
+    --border-radius-sm: 0.4rem;
+    --border-radius-lg: 1rem;
+    --border-width: 0.125rem;
     --container-width: 70%;
     --container-max-width: 1200px;
 }
 
 /* Reset and Base Styles */
 body {
-    background-color: var(--color-background);
+    background: linear-gradient(165deg, var(--color-blue-pale) 0%, var(--color-background) 45%, #FFF9F7 100%);
+    background-attachment: fixed;
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
@@ -57,6 +68,7 @@ h2 {
     text-align: left;
     font-size: var(--font-size-xxl);
     line-height: var(--line-height-tight);
+    color: var(--color-navy);
 }
 
 h3 {
@@ -65,6 +77,7 @@ h3 {
     margin-left: var(--spacing-md);
     font-size: var(--font-size-xl);
     line-height: var(--line-height-tight);
+    color: var(--color-navy);
 }
 
 h3.paper-header {
@@ -78,7 +91,7 @@ h3.paper-header {
 }
 
 h3.paper-header:hover {
-    color: var(--color-link-hover);
+    color: var(--color-red);
 }
 
 /* Links */
@@ -94,7 +107,7 @@ a:hover {
 }
 
 a:focus {
-    outline: 2px solid var(--color-link);
+    outline: 2px solid var(--color-red);
     outline-offset: 2px;
 }
 
@@ -104,18 +117,23 @@ a:visited {
 
 /* Container */
 .container {
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     color: var(--color-text-primary);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-lg);
     margin: auto;
     margin-top: var(--spacing-xl);
     width: var(--container-width);
     max-width: var(--container-max-width);
     display: block;
+    background-color: var(--color-surface);
+    border: var(--border-width) solid var(--color-border-soft);
+    box-shadow: var(--shadow-card);
 }
 
 .container-intro {
-    margin-top: 2.188rem; /* 35px */
+    margin-top: 2.188rem;
+    border-left: 4px solid var(--color-red);
+    background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-blue-pale) 100%);
 }
 
 /* Utility Classes for Inline Styles */
@@ -207,7 +225,18 @@ img:not(.icon-small):not(.topic-icon) {
 }
 
 img.content {
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-lg);
+}
+
+img.profile-photo {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid var(--color-red);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-playful);
 }
 
 img.icon-small {
@@ -239,14 +268,14 @@ svg {
     display: block;
     padding: var(--spacing-md);
     color: var(--color-text-primary);
-    border: var(--color-border);
-    border-style: dashed;
-    border-width: var(--border-width);
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    background-color: var(--color-surface);
+    border: var(--border-width) dashed var(--color-blue-deep);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .post-row:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-red);
+    box-shadow: var(--shadow-card);
 }
 
 .post-heading {
@@ -265,7 +294,7 @@ svg {
 }
 
 .post-heading:hover img.topic-icon {
-    filter: brightness(0) saturate(100%) invert(85%) sepia(12%) saturate(800%) hue-rotate(315deg) brightness(110%) contrast(85%);
+    filter: brightness(0) saturate(100%) invert(14%) sepia(95%) saturate(7452%) hue-rotate(0deg) brightness(95%) contrast(118%);
 }
 
 /* Paper Metadata */
@@ -289,7 +318,7 @@ svg {
     display: none;
     margin-top: var(--spacing-md);
     padding-top: var(--spacing-md);
-    border-top: 1px solid rgba(126, 72, 90, 0.2);
+    border-top: 1px solid var(--color-border-soft);
     line-height: var(--line-height-base);
 }
 
@@ -300,12 +329,17 @@ svg {
 /* Papers Container */
 .papers-header-class {
     display: flex;
-    border-style: solid;
+    border-bottom: 3px solid var(--color-red);
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
     align-items: center;
     gap: var(--spacing-sm);
     justify-content: space-between;
+}
+
+#papers-header {
+    color: var(--color-navy);
 }
 
 .papers-header-div {
@@ -348,12 +382,12 @@ svg {
 }
 
 .paper-topic-icon:focus {
-    outline: 2px solid var(--color-link);
+    outline: 2px solid var(--color-red);
     outline-offset: 2px;
 }
 
 .paper-topic-icon.active img {
-    filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(2878%) hue-rotate(217deg) brightness(96%) contrast(97%);
+    filter: brightness(0) saturate(100%) invert(14%) sepia(95%) saturate(7452%) hue-rotate(0deg) brightness(95%) contrast(118%);
 }
 
 .paper-topic-icon.active:hover {
@@ -366,9 +400,9 @@ svg {
     padding: var(--spacing-xs) 0;
     font-size: var(--font-size-xl);
     font-weight: 600;
-    color: var(--color-text-primary);
-    border-bottom: 2px solid var(--color-border);
-    opacity: 0.7;
+    color: var(--color-red-dark);
+    border-bottom: 2px solid var(--color-blue);
+    opacity: 1;
 }
 
 .year-divider span {
@@ -393,7 +427,7 @@ svg {
 }
 
 .error-message pre {
-    background: #f0f0f0;
+    background: var(--color-blue-pale);
     padding: var(--spacing-lg);
     display: inline-block;
     text-align: left;
@@ -455,6 +489,22 @@ li.circuit-complexity {
     margin: auto;
     margin-left: 75%;
     font-size: var(--font-size-sm);
+    color: var(--color-navy);
+    opacity: 0.75;
+}
+
+/* Research-interest list links */
+li.communication-complexity a,
+li.proof-complexity a,
+li.circuit-complexity a {
+    color: var(--color-navy);
+    font-weight: 600;
+}
+
+li.communication-complexity a:hover,
+li.proof-complexity a:hover,
+li.circuit-complexity a:hover {
+    color: var(--color-red);
 }
 
 /* Responsive Design */
