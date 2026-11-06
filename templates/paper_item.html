@@ -4,6 +4,9 @@
         {% for topic in paper.topics %}
         <div><img src="{{ topic }}.svg" class="topic-icon"></div>
         {% endfor %}
+        {% if paper.ai_assistance %}
+        <div title="Significant AI assistance"><img src="ai-assistance.svg" class="topic-icon" alt="Significant AI assistance"></div>
+        {% endif %}
         <div>
             <h3 class="paper-header" onclick="toggleVisibility('{{ paper_id }}')">{{ paper.title }}</h3>
         </div>

@@ -1,5 +1,49 @@
 [
   {
+    "title": "Sampling Tools and the Power of AC0",
+    "date": "2026-11-03 12:00:00-05:00",
+    "draft": true,
+    "topics": ["circuit-complexity"],
+    "ai_assistance": true,
+    "author": [
+      {"name": "AR", "url": "https://tunyash.github.io"},
+      {"name": "Emanuele Viola", "url": "https://www.ccs.neu.edu/home/viola/"}
+    ],
+    "links": [
+      {
+        "name": "Submission",
+        "url": "https://github.com/sigact-stoc/stoc2027/releases/download/papers-2/1061.pdf"
+      }
+    ],
+    "paper_id": "sampling-tools"
+  },
+  {
+    "title": "TFNP in the Random Oracle Model",
+    "date": "2026-11-03 12:00:00-05:00",
+    "draft": true,
+    "topics": ["proof-complexity"],
+    "ai_assistance": true,
+    "author": [
+      {"name": "Noah Fleming", "url": "https://noahrfleming.github.io/"},
+      {"name": "Mika Göös", "url": "https://theory.epfl.ch/mika/"},
+      {"name": "Ziyi Guan", "url": "https://ziyiguan.github.io"},
+      {"name": "Oliver Korten", "url": "https://www.oliverkorten.com/"},
+      {"name": "Daniel Mitropolsky", "url": "https://dmitropolsky.github.io/"},
+      {"name": "Toniann Pitassi", "url": "https://www.engineering.columbia.edu/faculty-staff/directory/toniann-pitassi"},
+      {"name": "AR", "url": "https://tunyash.github.io"},
+      {"name": "Dmitry Sokolov", "url": "https://logic.pdmi.ras.ru/~sokolov/"},
+      {"name": "Tianqi Yang", "url": "https://tianqiyang.org/"},
+      {"name": "Weiqiang Yuan", "url": "https://wwwaltzzz.github.io/"}
+    ],
+    "links": [
+      {
+        "name": "arXiv",
+        "url": "https://arxiv.org/abs/2611.05308"
+      }
+    ],
+    "paper_id": "tfnp-in-the-rom"
+  },
+  {
     "title": "Average-Case Hardness of Binary-Encoded Clique in Proof and Communication Complexity",
     "date": "2026-07-10 19:23:03+02:00",
     "draft": true,

@@ -231,6 +231,9 @@ function renderPaper(paper, abstractHtml = '') {
     const topicIcons = paper.topics.map(topic => 
         `<div><img src="${topic}.svg" class="topic-icon"></div>`
     ).join('\n        ');
+    const aiIcon = paper.ai_assistance
+        ? '<div title="Significant AI assistance"><img src="ai-assistance.svg" class="topic-icon" alt="Significant AI assistance"></div>'
+        : '';
     
     const authors = paper.author.map(author => 
         `<a href="${author.url}" class="inside-post">${escapeHtml(author.name)}</a>`
@@ -245,6 +248,7 @@ function renderPaper(paper, abstractHtml = '') {
         <div class="post-row" id="paper-${paperId}">
             <div class="post-heading">
                 ${topicIcons}
+                ${aiIcon}
                 <div>
                     <h3 class="paper-header" onclick="toggleVisibility('${paperId}')">${escapeHtml(paper.title)}</h3>
                 </div>

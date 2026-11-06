@@ -298,8 +298,23 @@ svg {
 }
 
 /* Paper Metadata */
+.ai-assistance-legend {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md);
+    font-size: var(--font-size-sm);
+}
+
+.ai-assistance-legend img {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
 .paper-authors {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     margin-bottom: var(--spacing-sm);
 }
